@@ -5691,7 +5691,7 @@
 	
 	  // Right edge outside viewport, try to move it.
 	  if (overflow.adjustX && pos.left + size.width > visibleRect.right) {
-	    // 保证左边界和可视区域左边界对齐
+	    // 保证左边界���可视区域左边界对齐
 	    pos.left = Math.max(visibleRect.right - size.width, visibleRect.left);
 	  }
 	

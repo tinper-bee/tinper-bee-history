@@ -2589,7 +2589,7 @@
 	 * 分割要传入父元素和子元素的props
 	 * @param  {[object]} props     传入的属性
 	 * @param  {[reactElement]} Component 组件
-	 * @return {[array]}           返回数组，第一个元素为父元素props对���，第二个子元素props对象
+	 * @return {[array]}           返回数组，第一个元素为父元素props对象，第二个子元素props对象
 	 */
 	function splitComponentProps(props, Component) {
 	  var componentPropTypes = Component.propTypes;
@@ -4698,7 +4698,7 @@
 	  }
 	
 	  // https://github.com/kissyteam/kissy/issues/190
-	  // ��对于屏幕位置没变，而 left/top 变了
+	  // 相对于屏幕位置没变，而 left/top 变了
 	  // 例如 <div 'relative'><el absolute></div>
 	  _utils2['default'].offset(source, {
 	    left: newElRegion.left,
@@ -7480,7 +7480,7 @@
 	  accordion: _propTypes2["default"].bool,
 	  //激活的项
 	  activeKey: _propTypes2["default"].any,
-	  //默认的激活的项
+	  //默��的激活的项
 	  defaultActiveKey: _propTypes2["default"].any,
 	  //选中函数
 	  onSelect: _propTypes2["default"].func,

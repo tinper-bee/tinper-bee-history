@@ -5148,7 +5148,7 @@
 	    // firefox chrome documentElement.scrollHeight< body.scrollHeight
 	    // ie standard mode : documentElement.scrollHeight> body.scrollHeight
 	    d.documentElement['scroll' + name],
-	    // quirks : documentElement.scrollHeight 最大等于可���窗口多一点？
+	    // quirks : documentElement.scrollHeight 最大等于可视窗口多一点？
 	    d.body['scroll' + name], domUtils['viewport' + name](d));
 	  };
 	

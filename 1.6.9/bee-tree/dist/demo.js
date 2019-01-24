@@ -4620,7 +4620,7 @@
 	  // 当前节点将要所处的区域
 	  var newElRegion = _utils2['default'].merge(elRegion, elFuturePos);
 	
-	  // 如果可视区域不能完全放置当前节���时允许调整
+	  // 如果可视区域不能完全放置当前节点时允许调整
 	  if (visibleRect && (overflow.adjustX || overflow.adjustY) && isTgtRegionVisible) {
 	    if (overflow.adjustX) {
 	      // 如果横向不能放下
@@ -9713,7 +9713,7 @@
 	    }
 	    var children = props.children;
 	    var newChildren = children;
-	    // 确定所有子节���是否是TreeNode
+	    // 确定所有子节点是否是TreeNode
 	    var allTreeNode = false;
 	    if (Array.isArray(children)) {
 	      for (var index = 0; index < children.length; index++) {

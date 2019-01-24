@@ -1198,7 +1198,7 @@
 	        } else if (status === EXITED) {
 	          this.performEnter(this.props);
 	        }
-	        // 其他，当我们已经输入或输出
+	        // 其他，当��们已经输入或输出
 	      } else {
 	        if (status === ENTERING || status === ENTERED) {
 	          this.performExit(this.props);

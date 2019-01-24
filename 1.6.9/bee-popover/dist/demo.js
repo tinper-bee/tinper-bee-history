@@ -7931,7 +7931,7 @@
 	     */
 	    content: _propTypes2['default'].node.isRequired,
 	    /**
-	     * 显示和隐藏覆盖一旦触发的毫秒延迟量
+	     * 显示和隐藏覆盖��旦触发的毫秒延迟量
 	     */
 	    delay: _propTypes2['default'].number,
 	    /**
@@ -10000,7 +10000,7 @@
 	   */
 	  onExiting: _propTypes2["default"].func,
 	  /**
-	   * 退��动画后的钩子函数
+	   * 退出动画后的钩子函数
 	   */
 	  onExited: _propTypes2["default"].func
 	};

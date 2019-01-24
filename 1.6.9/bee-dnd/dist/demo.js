@@ -1166,7 +1166,7 @@
 	  Transition.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
 	    if (nextProps["in"] && this.props.unmountOnExit) {
 	      if (this.state.status === UNMOUNTED) {
-	        // 在componentDidUpdate���行动画.
+	        // 在componentDidUpdate执行动画.
 	        this.setState({ status: EXITED });
 	      }
 	    } else {

@@ -4664,7 +4664,7 @@
 	      }
 	    }
 	
-	    // 如果失败，重新计算当前节点���要被放置的位置
+	    // 如果失败，重新计算当前节点将要被放置的位置
 	    if (fail) {
 	      elFuturePos = (0, _getElFuturePos2['default'])(elRegion, tgtRegion, points, offset, targetOffset);
 	      _utils2['default'].mix(newElRegion, elFuturePos);
@@ -10136,7 +10136,7 @@
 	        if (lastVisibleIndex !== undefined && _this3.props.className.indexOf(_this3.props.prefixCls + '-root') !== -1) {
 	          if (index > lastVisibleIndex) {
 	            item = _react2["default"].cloneElement(childNode,
-	            // 这里修改 eventKey 是为了防止���藏状态下还会触发 openkeys 事件
+	            // 这里修改 eventKey 是为了防止隐藏状态下还会触发 openkeys 事件
 	            {
 	              style: { display: 'none' },
 	              eventKey: childNode.props.eventKey + '-hidden',

@@ -1043,7 +1043,7 @@
 	  "in": _propTypes2["default"].bool,
 	
 	  /**
-	   * 不��示的时候是否移除组件
+	   * 不显示的时候是否移除组件
 	   */
 	  unmountOnExit: _propTypes2["default"].bool,
 	
@@ -10191,7 +10191,7 @@
 	        wrapperProps = _objectWithoutProperties(props, ['label', 'srOnly', 'striped', 'colors', 'className', 'style', 'min', 'max', 'now', 'active', 'size', 'labelPosition', 'children', 'clsPrefix']);
 	
 	    /**
-	     * ���果是单独直接用<ProgressBar /> 走children判断为false语句。
+	     * 如果是单独直接用<ProgressBar /> 走children判断为false语句。
 	     * 如果以组的形式使用<ProgressBar><ProgressBar now={10} /><ProgressBar now={20}/></ProgressBar> 走判断语句为true，
 	     * 将children分别加上isChild=true的属性
 	     */

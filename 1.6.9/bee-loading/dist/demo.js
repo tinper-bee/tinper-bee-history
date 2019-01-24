@@ -1178,7 +1178,7 @@
 	    var status = this.state.status;
 	
 	    if (this.props.unmountOnExit && status === EXITED) {
-	      // 当使用unmountOnExit时，exited为exiting和unmont的过渡状态
+	      // 当使用unmountOnExit时��exited为exiting和unmont的过渡状态
 	      if (this.props["in"]) {
 	        this.performEnter(this.props);
 	      } else {
@@ -4697,7 +4697,7 @@
 	    newOverflowCfg.adjustX = overflow.adjustX && isStillFailX;
 	    newOverflowCfg.adjustY = overflow.adjustY && isStillFailY;
 	
-	    // 确实要调整，甚至可能会��整高度宽度
+	    // 确实要调整，甚至可能会调整高度宽度
 	    if (newOverflowCfg.adjustX || newOverflowCfg.adjustY) {
 	      newElRegion = (0, _adjustForViewport2['default'])(elFuturePos, elRegion, visibleRect, newOverflowCfg);
 	    }
@@ -4916,7 +4916,7 @@
 	  var ret = elem[CURRENT_STYLE] && elem[CURRENT_STYLE][name];
 	
 	  // 当 width/height 设置为百分比时，通过 pixelLeft 方式转换的 width/height 值
-	  // 一开始就处理了! CUSTOM_STYLE.height,CUSTOM_STYLE.width ,cssHook 解决@2011-08-19
+	  // 一���始就处理了! CUSTOM_STYLE.height,CUSTOM_STYLE.width ,cssHook 解决@2011-08-19
 	  // 在 ie 下不对，需要直接用 offset 方式
 	  // borderWidth 等值也有问题，但考虑到 borderWidth 设为百分比的概率很小，这里就不考虑了
 	

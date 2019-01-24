@@ -306,7 +306,7 @@
 	   */
 	  xsPull: _propTypes2["default"].number,
 	  /**
-	   * sm左偏移��数
+	   * sm左偏移列数
 	   */
 	  smPull: _propTypes2["default"].number,
 	  /**
@@ -4633,7 +4633,7 @@
 	  // 当前节点将要所处的区域
 	  var newElRegion = _utils2['default'].merge(elRegion, elFuturePos);
 	
-	  // 如果可视���域不能完全放置当前节点时允许调整
+	  // 如果可视区域不能完全放置当前节点时允许调整
 	  if (visibleRect && (overflow.adjustX || overflow.adjustY) && isTgtRegionVisible) {
 	    if (overflow.adjustX) {
 	      // 如果横向不能放下
@@ -5603,7 +5603,7 @@
 	  //        if (UA.ie && ieMode < 8) {
 	  //            return element.offsetParent;
 	  //        }
-	  // 统一的 offsetParent 方���
+	  // 统一的 offsetParent 方法
 	  var doc = _utils2['default'].getDocument(element);
 	  var body = doc.body;
 	  var parent = void 0;
@@ -7672,7 +7672,7 @@
 	     * @veIgnore
 	     */
 	    htmlType: _propTypes2["default"].oneOf(['submit', 'button', 'reset']),
-	    isSubmit: _propTypes2["default"].bool //���否作为form的提交按钮
+	    isSubmit: _propTypes2["default"].bool //是否作为form的提交按钮
 	};
 	
 	var defaultProps = {
@@ -8032,7 +8032,7 @@
 	            if (_this.state.top < _this.props.offsetTop) {
 	                fixStyle = {
 	                    position: "fixed",
-	                    //修改20171102 去掉展示Affix全部内容，若是Affix内容高度大于container可展示，那么Affix只可展示部分
+	                    //修改20171102 去掉展示Affix全部内容，若是Affix内容高度大于container可展示，那么Affix��可展示部分
 	                    top: _this.props.canHidden ? h < 0 ? h : Math.min(h, _this.props.offsetTop) : h < 0 ? 0 : Math.min(h, _this.props.offsetTop),
 	                    left: _this.props.horizontal ? _this.state.initLeft : _this.state.left,
 	                    height: _this.state.height,

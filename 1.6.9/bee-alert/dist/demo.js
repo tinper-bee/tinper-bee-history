@@ -254,7 +254,7 @@
 	  componentClass: _propTypes2["default"].oneOfType([_propTypes2["default"].element, _propTypes2["default"].string]),
 	
 	  /**
-	   * xs显示列数
+	   * xs显示列���
 	   */
 	  xs: _propTypes2["default"].number,
 	  /**
