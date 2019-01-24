@@ -10136,7 +10136,7 @@
 	        if (lastVisibleIndex !== undefined && _this3.props.className.indexOf(_this3.props.prefixCls + '-root') !== -1) {
 	          if (index > lastVisibleIndex) {
 	            item = _react2["default"].cloneElement(childNode,
-	            // 这里修改 eventKey 是为了防止隐藏状态下还会触发 openkeys 事件
+	            // 这里修改 eventKey 是为了防止���藏状态下还会触发 openkeys 事件
 	            {
 	              style: { display: 'none' },
 	              eventKey: childNode.props.eventKey + '-hidden',
@@ -16416,7 +16416,7 @@
 	
 	  if (allowHorizontalScroll) {
 	    if (diffTop.left < 0 || diffBottom.left > 0) {
-	      // 强���向上
+	      // 强制向上
 	      if (alignWithLeft === true) {
 	        util.scrollLeft(container, containerScroll.left + diffTop.left);
 	      } else if (alignWithLeft === false) {

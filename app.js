@@ -55,6 +55,8 @@ const getOtherHtml=(url,version)=>{
                 return `href="/tinper-bee-history/${version}/${item}"`;
             })
             html = html.replace(/href="\/css/g,`href="/tinper-bee-history/${version}/css`);
+            let reg = new RegExp('href="\/' + url ,"gim")
+            html = html.replace(reg,`href="/tinper-bee-history/${url}`);
             fs.writeFile(`./${version}/${url}/index.html`, html, (err)=>{callback(err,`写入${url}.html`)});
         });
     }).on('error', ()=> {

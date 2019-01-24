@@ -1043,7 +1043,7 @@
 	  "in": _propTypes2["default"].bool,
 	
 	  /**
-	   * 不显示的时候是否移除组件
+	   * 不��示的时候是否移除组件
 	   */
 	  unmountOnExit: _propTypes2["default"].bool,
 	
@@ -5867,7 +5867,7 @@
 	  // 如果可视区域不能完全放置当前节点时允许调整
 	  if (visibleRect && (overflow.adjustX || overflow.adjustY) && isTargetNotOutOfVisible) {
 	    if (overflow.adjustX) {
-	      // 如果横向不能放���
+	      // 如果横向不能放下
 	      if (isFailX(elFuturePos, elRegion, visibleRect)) {
 	        // 对齐位置反下
 	        var newPoints = flip(points, /[lr]/ig, {
@@ -5910,7 +5910,7 @@
 	      }
 	    }
 	
-	    // 如���失败，重新计算当前节点将要被放置的位置
+	    // 如果失败，重新计算当前节点将要被放置的位置
 	    if (fail) {
 	      elFuturePos = (0, _getElFuturePos2['default'])(elRegion, refNodeRegion, points, offset, targetOffset);
 	      _utils2['default'].mix(newElRegion, elFuturePos);
@@ -6681,7 +6681,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
 	/**
-	 * 得到会导致���素显示不全的祖先元素
+	 * 得到会导致元素显示不全的祖先元素
 	 */
 	
 	function getOffsetParent(element) {
@@ -10191,7 +10191,7 @@
 	        wrapperProps = _objectWithoutProperties(props, ['label', 'srOnly', 'striped', 'colors', 'className', 'style', 'min', 'max', 'now', 'active', 'size', 'labelPosition', 'children', 'clsPrefix']);
 	
 	    /**
-	     * 如果是单独直接用<ProgressBar /> 走children判断为false语句。
+	     * ���果是单独直接用<ProgressBar /> 走children判断为false语句。
 	     * 如果以组的形式使用<ProgressBar><ProgressBar now={10} /><ProgressBar now={20}/></ProgressBar> 走判断语句为true，
 	     * 将children分别加上isChild=true的属性
 	     */
@@ -10745,7 +10745,7 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); } /**
 	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @title 限制文件大小
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @description 限制自定义上传文件的大小。选中文件后触发beforeUpload回调，通过true/false来确定是否继续上传【file.size/1024*100 单位 KB、file.size/1024 单位 M 】
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @description 限制自定义上传文件的大小。选中文件后触发beforeUpload回调���通过true/false来确定是否继续上传【file.size/1024*100 单位 KB、file.size/1024 单位 M 】
 	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
 	
 	var demo7props = {

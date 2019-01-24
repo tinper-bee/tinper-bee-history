@@ -2598,7 +2598,7 @@
 	}
 	
 	/**
-	 * 分割要传入父元素和子元素的props
+	 * 分割要传���父元素和子元素的props
 	 * @param  {[object]} props     传入的属性
 	 * @param  {[reactElement]} Component 组件
 	 * @return {[array]}           返回数组，第一个元素为父元素props对象，第二个子元素props对象
@@ -5707,7 +5707,7 @@
 	  value: true
 	});
 	/**
-	 * 获取 node 上的 align 对齐点 相对于页面��坐标
+	 * 获取 node 上的 align 对齐点 相对于页面的坐标
 	 */
 	
 	function getAlignOffset(region, align) {

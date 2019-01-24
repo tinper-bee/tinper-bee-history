@@ -11307,7 +11307,7 @@
 	  // ie 下应该减去窗口的边框吧，毕竟默认 absolute 都是相对窗口定位的
 	  // 窗口边框标准是设 documentElement ,quirks 时设置 body
 	  // 最好禁止在 body 和 html 上边框 ，但 ie < 9 html 默认有 2px ，减去
-	  // 但是非 ie 不可能设置窗口边框，body html 也不是窗口 ,ie 可以通过 html,body 设置
+	  // 但是非 ie 不可能���置窗口边框，body html 也不是窗口 ,ie 可以通过 html,body 设置
 	  // 标准 ie 下 docElem.clientTop 就是 border-top
 	  // ie7 html 即窗口边框改变不了。永远为 2
 	  // 但标准 firefox/chrome/ie9 下 docElem.clientTop 是窗口边框，即使设了 border-top 也为 0

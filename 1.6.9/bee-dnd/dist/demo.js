@@ -1166,7 +1166,7 @@
 	  Transition.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
 	    if (nextProps["in"] && this.props.unmountOnExit) {
 	      if (this.state.status === UNMOUNTED) {
-	        // 在componentDidUpdate执行动画.
+	        // 在componentDidUpdate���行动画.
 	        this.setState({ status: EXITED });
 	      }
 	    } else {
@@ -4783,7 +4783,7 @@
 	  var doc = elem.ownerDocument;
 	  var body = doc.body;
 	  var docElem = doc && doc.documentElement;
-	  // 根据 GBS 最新数据，A-Grade Browsers ��已支持 getBoundingClientRect 方法，不用再考虑传统的实现方式
+	  // 根据 GBS 最新数据，A-Grade Browsers 都已支持 getBoundingClientRect 方法，不用再考虑传统的实现方式
 	  box = elem.getBoundingClientRect();
 	
 	  // 注：jQuery 还考虑减去 docElem.clientLeft/clientTop

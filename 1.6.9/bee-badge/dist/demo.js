@@ -2625,7 +2625,7 @@
 	 * 分割要传入父元素和子元素的props
 	 * @param  {[object]} props     传入的属性
 	 * @param  {[reactElement]} Component 组件
-	 * @return {[array]}           返回数组，第一个元素��父元素props对象，第二个子元素props对象
+	 * @return {[array]}           返回数组，第一个元素为父元素props对象，第二个子元素props对象
 	 */
 	function splitComponentProps(props, Component) {
 	  var componentPropTypes = Component.propTypes;
@@ -5148,7 +5148,7 @@
 	    // firefox chrome documentElement.scrollHeight< body.scrollHeight
 	    // ie standard mode : documentElement.scrollHeight> body.scrollHeight
 	    d.documentElement['scroll' + name],
-	    // quirks : documentElement.scrollHeight 最大等于可视窗口多一点？
+	    // quirks : documentElement.scrollHeight 最大等于可���窗口多一点？
 	    d.body['scroll' + name], domUtils['viewport' + name](d));
 	  };
 	

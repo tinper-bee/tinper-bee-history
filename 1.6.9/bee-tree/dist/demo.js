@@ -4620,7 +4620,7 @@
 	  // 当前节点将要所处的区域
 	  var newElRegion = _utils2['default'].merge(elRegion, elFuturePos);
 	
-	  // 如果可视区域不能完全放置当前节点时允许调整
+	  // 如果可视区域不能完全放置当前节���时允许调整
 	  if (visibleRect && (overflow.adjustX || overflow.adjustY) && isTgtRegionVisible) {
 	    if (overflow.adjustX) {
 	      // 如果横向不能放下
@@ -7958,7 +7958,7 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); } /**
 	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @title Tree基本使用���例
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @title Tree基本使用示例
 	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @description 示例涵盖 checkbox如何选择，disable状态和部分选择状态。checkStrictly为true时，子节点与父节点的选择情况都不会影响到对方
 	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *
 	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
@@ -8101,7 +8101,7 @@
 	  checkStrictly: _propTypes2['default'].bool,
 	  /** 是否支持选中 */
 	  checkable: _propTypes2['default'].bool,
-	  /** 默��展开所有树节点 */
+	  /** 默认展开所有树节点 */
 	  defaultExpandAll: _propTypes2['default'].bool,
 	  /** 默认展开指定的树节点 */
 	  defaultExpandedKeys: _propTypes2['default'].array,
@@ -9713,7 +9713,7 @@
 	    }
 	    var children = props.children;
 	    var newChildren = children;
-	    // 确定所有子节点是否是TreeNode
+	    // 确定所有子节���是否是TreeNode
 	    var allTreeNode = false;
 	    if (Array.isArray(children)) {
 	      for (var index = 0; index < children.length; index++) {

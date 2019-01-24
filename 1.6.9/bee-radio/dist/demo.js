@@ -828,7 +828,7 @@
 	    );
 	  };
 	
-	  //复制代码，弹���提示信息
+	  //复制代码，弹出提示信息
 	
 	
 	  Panel.prototype.copyDemo = function copyDemo(e) {
@@ -1060,7 +1060,7 @@
 	  "in": _propTypes2["default"].bool,
 	
 	  /**
-	   * 不显示的时候是否移除组件
+	   * ��显示的时候是否移除组件
 	   */
 	  unmountOnExit: _propTypes2["default"].bool,
 	
@@ -4783,7 +4783,7 @@
 	  var doc = elem.ownerDocument;
 	  var body = doc.body;
 	  var docElem = doc && doc.documentElement;
-	  // 根据 GBS 最新数据，A-Grade Browsers 都已支持 getBoundingClientRect 方法，不用再考虑传统的实现���式
+	  // 根据 GBS 最新数据，A-Grade Browsers 都已支持 getBoundingClientRect 方法，不用再考虑传统的实现方式
 	  box = elem.getBoundingClientRect();
 	
 	  // 注：jQuery 还考虑减去 docElem.clientLeft/clientTop

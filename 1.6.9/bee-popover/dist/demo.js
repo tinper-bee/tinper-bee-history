@@ -6038,7 +6038,7 @@
 	  // too expensive just to query them all.
 	
 	  // ie 下应该减去窗口的边框吧，毕竟默认 absolute 都是相对窗口定位的
-	  // 窗���边框标准是设 documentElement ,quirks 时设置 body
+	  // 窗口边框标准是设 documentElement ,quirks 时设置 body
 	  // 最好禁止在 body 和 html 上边框 ，但 ie < 9 html 默认有 2px ，减去
 	  // 但是非 ie 不可能设置窗口边框，body html 也不是窗口 ,ie 可以通过 html,body 设置
 	  // 标准 ie 下 docElem.clientTop 就是 border-top
@@ -6135,7 +6135,7 @@
 	  // 当 width/height 设置为百分比时，通过 pixelLeft 方式转换的 width/height 值
 	  // 一开始就处理了! CUSTOM_STYLE.height,CUSTOM_STYLE.width ,cssHook 解决@2011-08-19
 	  // 在 ie 下不对，需要直接用 offset 方式
-	  // borderWidth 等值也有问题，但考虑到 borderWidth 设为百分比的概率很小，这��就不考虑了
+	  // borderWidth 等值也有问题，但考虑到 borderWidth 设为百分比的概率很小，这里就不考虑了
 	
 	  // From the awesome hack by Dean Edwards
 	  // http://erik.eae.net/archives/2007/07/27/18.54.15/#comment-102291
@@ -6685,7 +6685,7 @@
 	  /*
 	   <div style="width: 50px;height: 100px;overflow: hidden">
 	   <div style="width: 50px;height: 100px;position: relative;" id="d6">
-	   元素 6 高 100px ��� 50px<br/>
+	   元素 6 高 100px 宽 50px<br/>
 	   </div>
 	   </div>
 	   */
@@ -7931,7 +7931,7 @@
 	     */
 	    content: _propTypes2['default'].node.isRequired,
 	    /**
-	     * 显示和隐藏覆盖��旦触发的毫秒延迟量
+	     * 显示和隐藏覆盖一旦触发的毫秒延迟量
 	     */
 	    delay: _propTypes2['default'].number,
 	    /**
@@ -10000,7 +10000,7 @@
 	   */
 	  onExiting: _propTypes2["default"].func,
 	  /**
-	   * 退出动画后的钩子函数
+	   * 退��动画后的钩子函数
 	   */
 	  onExited: _propTypes2["default"].func
 	};

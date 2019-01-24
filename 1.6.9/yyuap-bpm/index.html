@@ -1122,7 +1122,7 @@
 <p>如果使用流程图相关组件那么导入:</p>
 <pre><code class="lang-js">import { BpmButtonSubmit,BpmButtonRecall,BpmTaskApprovalWrap,BpmFlowChart,BpmTable } from &#39;yyuap-bpm&#39;;
 </code></pre>
-<p>然后在render使用的时候传入相应组件需要的参数即可：</p>
+<p>然后在render使用的时候传入相应组件需要的参��即可：</p>
 <pre><code class="lang-js">
 //提交流程按钮使用
 
@@ -1601,7 +1601,7 @@
 
 <h5 id="bpmtestchecktable-">BpmTestCheckTable(测试用不要使用在项目里)</h5>
 <blockquote>
-<p>用来开发的时候测试任务中心��格，禁止用于生产阶段切记！！！</p>
+<p>用来开发的时候测试任务中心表格，禁止用于生产阶段切记！！！</p>
 </blockquote>
 <h3 id="5-">5. 指南</h3>
 <ol>
@@ -1609,7 +1609,7 @@
 首先使用审批面板组件<pre><code class="lang-js">//导入流程审批面板整合组件
 import { BpmTaskApprovalWrap } from &#39;yyuap-bpm&#39;;
 </code></pre>
-导入组件后，使用我们的组件，传入对应的props，这里主要讲解流程图按钮的后续事件如何做<code>onBpmFlowClick</code><pre><code class="lang-js">&lt;BpmTaskApprovalWrap
+导入组件后，使用我们的组件，传入对应的props，这里主要讲解流程图按钮���后续事件如何做<code>onBpmFlowClick</code><pre><code class="lang-js">&lt;BpmTaskApprovalWrap
  id={rowData.id}
  onBpmFlowClick={() =&gt; { this.onClickToBPM(rowData) }}//拿到我们的行数据，主要用id
  appType={appType}

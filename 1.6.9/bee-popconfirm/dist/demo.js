@@ -1092,7 +1092,7 @@
 	  enteringClassName: _propTypes2["default"].string,
 	
 	  /**
-	   * 进入动画开始时的��子函数
+	   * 进入动画开始时的钩子函数
 	   */
 	  onEnter: _propTypes2["default"].func,
 	  /**
@@ -9908,7 +9908,7 @@
 	  transitionAppear: _propTypes2["default"].bool,
 	
 	  /**
-	   * 设置超时时间，防止出现问题，���设置为>=动画时间
+	   * 设置超时时间，防止出现问题，可设置为>=动画时间
 	   */
 	  timeout: _propTypes2["default"].number,
 	
