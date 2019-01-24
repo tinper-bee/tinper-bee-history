@@ -38,7 +38,7 @@ const mkdirs = (dirpath, callback)=> {
 };
 
 /**
- * 写入其它html
+ * 写入组件html
  * @param {*} url 
  * @param {*} version 
  */
@@ -51,12 +51,31 @@ const getOtherHtml=(url,version)=>{
         });
         // 数据获取结束
         res.on('end', ()=>{
-            mkdirs(`${version}/${url}`,(err)=>{callback(err,`创建${url}`)});
             html = html.replace(/href="\/(.+?)#.+?"/g,(str,item)=>{
                 return `href="/tinper-bee-history/${version}/${item}"`;
             })
             html = html.replace(/href="\/css/g,`href="/tinper-bee-history/${version}/css`);
             fs.writeFile(`./${version}/${url}/index.html`, html, (err)=>{callback(err,`写入${url}.html`)});
+        });
+    }).on('error', ()=> {
+        console.log('获取数据出错！');
+    });
+}
+/**
+ * 写入组件demo.js demo.css
+ * @param {*} url 
+ * @param {*} version 
+ */
+const getOtherDemo=(url,version,firename)=>{
+    http.get(`http://bee.tinper.org/${url}/dist/${firename}`, res=> {
+        let html = '';
+        // 获取页面数据
+        res.on('data', data=> {
+            html += data;
+        });
+        // 数据获取结束
+        res.on('end', ()=>{
+            fs.writeFile(`./${version}/${url}/dist/${firename}`, html, (err)=>{callback(err,`写入${url} ${firename}`)});
         });
     }).on('error', ()=> {
         console.log('获取数据出错！');
@@ -75,7 +94,11 @@ const formatHtml = (html)=>{
     mkdirs(`${version}/css`,(err)=>{callback(err,'写入css')});
 
     html = html.replace(/href="\/(.+?)#.+?"/g,(str,item)=>{
-        getOtherHtml(item,version)
+        mkdirs(`${version}/${item}`,(err)=>{callback(err,`创建${item}`)});
+        mkdirs(`${version}/${item}/dist`,(err)=>{callback(err,`创建${item} dist`)});
+        getOtherHtml(item,version);
+        getOtherDemo(item,version,'demo.js');
+        getOtherDemo(item,version,'demo.css');
         return `href="/tinper-bee-history/${version}/${item}"`;
     })
 
