@@ -1,0 +1,2005 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>tinper-bee</title>
+    <link rel="icon" href="logos/favicon.png" type="image/png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="tinper-bee 是基于 iuap design 的 react 组件库，包含丰富的基础组件和应用组件，支持组件的灵活调用和扩展，助力快速进行应用的组件化开发。">
+    <meta name="keywords" content="tinper-bee, tinper, bee">
+    <meta name="keywords" content="react, UI, framework">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <link rel="icon" href="//tinper.org/assets/images/favicon.png" type="image/png" sizes="16x16">
+    
+
+        <link href="//cdn.jsdelivr.net/highlight.js/9.8.0/styles/default.min.css" type="text/css" rel="stylesheet" />
+        <link href="/tinper-bee-history/1.6.9/css/atom-one-dark.css" type="text/css" rel="stylesheet" />
+        <link href="/tinper-bee-history/1.6.9/css/layout.css" type="text/css" rel="stylesheet" />
+
+    
+    
+  <link href="//design.yonyoucloud.com/static/tinper-bee/1.6.5/assets/tinper-bee.css" rel="stylesheet" media="screen">
+    
+        <link href="/bee-table/dist/demo.css" type="text/css" rel="stylesheet" />
+    
+    <link href="/tinper-bee-history/1.6.9/css/md.css" type="text/css" rel="stylesheet" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109836800-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-109836800-1');
+    </script>
+</head>
+
+<body>
+
+
+<nav class="u-navbar u-navbar-default u-navbar-fixed-top demo-web-navbar" role="navigation">
+    <div class="u-container clearfix">
+        <div class="u-navbar-header">
+            <button type="button" class="u-navbar-toggle u-hamburger u-hamburger-close  u-collapsed"
+                    data-target="#example-default-collapse" data-toggle="collapse">
+                <!-- <span class="sr-only">Toggle navigation</span> -->
+                <span class="u-hamburger-bar"></span>
+            </button>
+            <a class="u-navbar-brand" href="//bee.tinper.org"><img src="//tinper.org/assets/images/tinperlogos32.png" alt=""></a>
+            <span class="tinper-version">最新:v1.6.9</span>
+        </div>
+        <ul class="u-nav u-navbar-nav nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">
+            <li>
+                <a class="nav-par" href="//tinper.org">首页</a>
+            </li>
+            <li>
+                <a class="nav-par" href="/quickStart">快速开始</a>
+            </li>
+            <li>
+                <a class="nav-par" href="/changelog">更新日志</a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+<div class="page-container example">
+    <div class="u-row content-container">
+        <div class="sidebar u-col-xs-6 u-col-sm-2 u-col-md-2">
+    <ul class="menu-component">
+        <li class="menu-group">
+                <div class="menu-group-title"></div>
+                <div class="menu-item">
+                        <a name="summarize" class="" id="summarize"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/summarize" title="summarize" >
+                                
+                                    概述
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="quickStart" class="" id="quickStart"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/quickStart" title="quickStart" >
+                                
+                                    快速开始
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="participation" class="" id="participation"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/participation" title="participation" >
+                                
+                                    参与贡献
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="compatibility" class="" id="compatibility"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/compatibility" title="compatibility" >
+                                
+                                    兼容性
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="keyboard" class="" id="keyboard"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/keyboard" title="keyboard" >
+                                
+                                    全键盘操作
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="multiport" class="" id="multiport"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/multiport" title="multiport" >
+                                
+                                    多端适配
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="international" class="" id="international"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/international" title="international" >
+                                
+                                    国际化
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="theme" class="" id="theme"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/theme" title="theme" >
+                                
+                                    定制主题
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="notice" class="" id="notice"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/notice" title="notice" >
+                                
+                                    使用注意
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="changelog" class="" id="changelog"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/changelog" title="changelog" >
+                                
+                                    更新日志
+                                
+                            </a>
+                        
+                    </div>
+                
+            </li><li class="menu-group">
+                <div class="menu-group-title">基础 General</div>
+                <div class="menu-item">
+                        <a name="bee-button" class="" id="bee-button"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-button" title="bee-button" >
+                                
+                                    按钮 <span>Button</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-icon" class="" id="bee-icon"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-icon" title="bee-icon" >
+                                
+                                    图标 <span>Icon</span>
+                                
+                            </a>
+                        
+                    </div>
+                
+            </li><li class="menu-group">
+                <div class="menu-group-title">布局 Layout</div>
+                <div class="menu-item">
+                        <a name="bee-layout" class="" id="bee-layout"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-layout" title="bee-layout" >
+                                
+                                    栅格布局 <span>Layout</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-page-layout" class="" id="bee-page-layout"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-page-layout" title="bee-page-layout" >
+                                
+                                    页面布局 <span>Page-Layout</span>
+                                
+                            </a>
+                        
+                    </div>
+                
+            </li><li class="menu-group">
+                <div class="menu-group-title">工具 Tool</div>
+                <div class="menu-item">
+                        <a name="bee-dnd" class="" id="bee-dnd"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-dnd" title="bee-dnd" >
+                                
+                                    拖拽 <span>Dnd</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-locale" class="" id="bee-locale"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-locale" title="bee-locale" >
+                                
+                                    多语 <span>Locale</span>
+                                
+                            </a>
+                        
+                    </div>
+                
+            </li><li class="menu-group">
+                <div class="menu-group-title">视图 View</div>
+                <div class="menu-item">
+                        <a name="bee-badge" class="" id="bee-badge"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-badge" title="bee-badge" >
+                                
+                                    标记 <span>Badge</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-button-group" class="" id="bee-button-group"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-button-group" title="bee-button-group" >
+                                
+                                    按钮组 <span>ButtonGroup</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-progress-bar" class="" id="bee-progress-bar"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-progress-bar" title="bee-progress-bar" >
+                                
+                                    进度条 <span>ProgressBar</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-loading-state" class="" id="bee-loading-state"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-loading-state" title="bee-loading-state" >
+                                
+                                    状态按钮 <span>LoadingState</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-panel" class="" id="bee-panel"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-panel" title="bee-panel" >
+                                
+                                    展示板 <span>Panel</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-tile" class="" id="bee-tile"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-tile" title="bee-tile" >
+                                
+                                    磁贴 <span>Tile</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-timeline" class="" id="bee-timeline"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-timeline" title="bee-timeline" >
+                                
+                                    时间轴 <span>Timeline</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-carousel" class="" id="bee-carousel"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-carousel" title="bee-carousel" >
+                                
+                                    轮播图 <span>Carousel</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-calendar" class="" id="bee-calendar"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-calendar" title="bee-calendar" >
+                                
+                                    日历 <span>Calendar</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-table" class="new" id="bee-table"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-table" title="bee-table" class="selected">
+                                
+                                    表格 <span>Table</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-complex-grid" class="new" id="bee-complex-grid"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-complex-grid" title="bee-complex-grid" >
+                                
+                                    复杂表格 <span>ComplexGrid</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-tree" class="" id="bee-tree"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-tree" title="bee-tree" >
+                                
+                                    树形控件 <span>Tree</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-collapse" class="" id="bee-collapse"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-collapse" title="bee-collapse" >
+                                
+                                    折叠 <span>Collapse</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-viewer" class="" id="bee-viewer"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-viewer" title="bee-viewer" >
+                                
+                                    图片查看器 <span>Viewer</span>
+                                
+                            </a>
+                        
+                    </div>
+                
+            </li><li class="menu-group">
+                <div class="menu-group-title">导航 Navigation</div>
+                <div class="menu-item">
+                        <a name="bee-breadcrumb" class="" id="bee-breadcrumb"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-breadcrumb" title="bee-breadcrumb" >
+                                
+                                    面包屑 <span>Breadcrumb</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-pagination" class="new" id="bee-pagination"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-pagination" title="bee-pagination" >
+                                
+                                    分页 <span>Pagination</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-tabs" class="" id="bee-tabs"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-tabs" title="bee-tabs" >
+                                
+                                    标签 <span>Tab</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-dropdown" class="" id="bee-dropdown"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-dropdown" title="bee-dropdown" >
+                                
+                                    下拉按钮 <span>Dropdown</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-navbar" class="" id="bee-navbar"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-navbar" title="bee-navbar" >
+                                
+                                    导航栏 <span>Navbar</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-menus" class="" id="bee-menus"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-menus" title="bee-menus" >
+                                
+                                    菜单 <span>Menus</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-step" class="" id="bee-step"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-step" title="bee-step" >
+                                
+                                    步骤条 <span>Steps</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-affix" class="" id="bee-affix"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-affix" title="bee-affix" >
+                                
+                                    固钉 <span>Affix</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-backtop" class="" id="bee-backtop"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-backtop" title="bee-backtop" >
+                                
+                                    回到顶部 <span>BackTop</span>
+                                
+                            </a>
+                        
+                    </div>
+                
+            </li><li class="menu-group">
+                <div class="menu-group-title">反馈 Feedback</div>
+                <div class="menu-item">
+                        <a name="bee-modal" class="" id="bee-modal"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-modal" title="bee-modal" >
+                                
+                                    模态框 <span>Modal</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-notification" class="" id="bee-notification"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-notification" title="bee-notification" >
+                                
+                                    通知 <span>Notification</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-alert" class="" id="bee-alert"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-alert" title="bee-alert" >
+                                
+                                    警告提示 <span>Alert</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-popconfirm" class="new" id="bee-popconfirm"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-popconfirm" title="bee-popconfirm" >
+                                
+                                    气泡弹窗 <span>Popconfirm</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-message" class="" id="bee-message"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-message" title="bee-message" >
+                                
+                                    消息提醒 <span>Message</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-tooltip" class="new" id="bee-tooltip"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-tooltip" title="bee-tooltip" >
+                                
+                                    文字提示 <span>Tooltip</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-loading" class="" id="bee-loading"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-loading" title="bee-loading" >
+                                
+                                    加载提示 <span>Loading</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-popover" class="new" id="bee-popover"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-popover" title="bee-popover" >
+                                
+                                    气泡卡片 <span>Popover</span>
+                                
+                            </a>
+                        
+                    </div>
+                
+            </li><li class="menu-group">
+                <div class="menu-group-title">表单 Form</div>
+                <div class="menu-item">
+                        <a name="bee-form" class="" id="bee-form"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-form" title="bee-form" >
+                                
+                                    表单 <span>Form</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-radio" class="" id="bee-radio"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-radio" title="bee-radio" >
+                                
+                                    单选 <span>Radio</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-checkbox" class="" id="bee-checkbox"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-checkbox" title="bee-checkbox" >
+                                
+                                    多选 <span>Checkbox</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-form-control" class="" id="bee-form-control"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-form-control" title="bee-form-control" >
+                                
+                                    输���框 <span>Input</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-input-group" class="" id="bee-input-group"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-input-group" title="bee-input-group" >
+                                
+                                    输入框组 <span>InputGroup</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-form-group" class="" id="bee-form-group"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-form-group" title="bee-form-group" >
+                                
+                                    表单容器 <span>FormGroup</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-switch" class="" id="bee-switch"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-switch" title="bee-switch" >
+                                
+                                    开关 <span>Switch</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-select" class="" id="bee-select"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-select" title="bee-select" >
+                                
+                                    下拉框 <span>Select</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-cascader" class="" id="bee-cascader"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-cascader" title="bee-cascader" >
+                                
+                                    级联菜单 <span>Cascader</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-city-select" class="" id="bee-city-select"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-city-select" title="bee-city-select" >
+                                
+                                    城市选择 <span>CitySelect</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-upload" class="" id="bee-upload"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-upload" title="bee-upload" >
+                                
+                                    上传 <span>Upload</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-slider" class="" id="bee-slider"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-slider" title="bee-slider" >
+                                
+                                    滑块 <span>Slider</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-transfer" class="" id="bee-transfer"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-transfer" title="bee-transfer" >
+                                
+                                    穿梭框 <span>Transfer</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-input-number" class="" id="bee-input-number"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-input-number" title="bee-input-number" >
+                                
+                                    数字框 <span>InputNumber</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-timepicker" class="" id="bee-timepicker"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-timepicker" title="bee-timepicker" >
+                                
+                                    时间 <span>TimePicker</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-datepicker" class="" id="bee-datepicker"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-datepicker" title="bee-datepicker" >
+                                
+                                    日期 <span>DatePicker</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-rate" class="" id="bee-rate"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-rate" title="bee-rate" >
+                                
+                                    评分 <span>Rate</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-clipboard" class="" id="bee-clipboard"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-clipboard" title="bee-clipboard" >
+                                
+                                    剪贴板 <span>Clipboard</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="bee-autocomplete" class="" id="bee-autocomplete"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/bee-autocomplete" title="bee-autocomplete" >
+                                
+                                    自动完成 <span>Autocomplete</span>
+                                
+                            </a>
+                        
+                    </div>
+                
+            </li><li class="menu-group">
+                <div class="menu-group-title">应用组件</div>
+                <div class="menu-item">
+                        <a name="ac-button" class="" id="ac-button"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/ac-button" title="ac-button" >
+                                
+                                    按钮 <span>AcButton</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="ac-notification" class="" id="ac-notification"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/ac-notification" title="ac-notification" >
+                                
+                                    通知 <span>AcNotification</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="ac-orgcenter-form" class="" id="ac-orgcenter-form"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/ac-orgcenter-form" title="ac-orgcenter-form" >
+                                
+                                    内部转移应用 <span>AcOrgcenterForm</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="ac-marquee" class="" id="ac-marquee"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/ac-marquee" title="ac-marquee" >
+                                
+                                    滚动公告 <span>AcMarquee</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="ac-upload" class="" id="ac-upload"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/ac-upload" title="ac-upload" >
+                                
+                                    附件管理 <span>AcUpload</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="ac-input-locale" class="" id="ac-input-locale"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/ac-input-locale" title="ac-input-locale" >
+                                
+                                    多语言输入 <span>AcInputLocale</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="yyuap-bpm" class="" id="yyuap-bpm"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/yyuap-bpm" title="yyuap-bpm" >
+                                
+                                    <span>Bpm</span>流程组件 <span>yyuap-bpm</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="ac-thermometer" class="" id="ac-thermometer"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/ac-thermometer" title="ac-thermometer" >
+                                
+                                    温度计/液位计 <span>AcThermometer</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="ac-toast" class="new" id="ac-toast"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/ac-toast" title="ac-toast" >
+                                
+                                    消息框组件<span>AcToast</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="ac-drawer" class="new" id="ac-drawer"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/ac-drawer" title="ac-drawer" >
+                                
+                                    抽屉组件<span>AcDrawer</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="ac-attachment" class="new" id="ac-attachment"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/ac-attachment" title="ac-attachment" >
+                                
+                                    上传列表组件<span>AcAttachment</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="ac-editor" class="" id="ac-editor"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/ac-editor" title="ac-editor" >
+                                
+                                    富文本编辑 <span>AcEditor</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="ac-mobile-locale" class="" id="ac-mobile-locale"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/ac-mobile-locale" title="ac-mobile-locale" >
+                                
+                                    手机号国际化 <span>AcMobileLocale</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="ac-complex-search-panel" class="" id="ac-complex-search-panel"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/ac-complex-search-panel" title="ac-complex-search-panel" >
+                                
+                                    条件搜索组件 <span>AcComplexSearchPanel</span>
+                                
+                            </a>
+                        
+                    </div>
+                
+            </li><li class="menu-group">
+                <div class="menu-group-title">参照组件2.0</div>
+                <div class="menu-item">
+                        <a name="ref-tree" class="" id="ref-tree"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/ref-tree" title="ref-tree" >
+                                
+                                    树形参照<span>RefTree</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="ref-multiple-selection" class="" id="ref-multiple-selection"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/ref-multiple-selection" title="ref-multiple-selection" >
+                                
+                                    多选参照<span>RefMultipleSelection</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="ref-table" class="" id="ref-table"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/ref-table" title="ref-table" >
+                                
+                                    表格参照 <span>RefTable</span> 
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="ref-tree-table" class="" id="ref-tree-table"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/ref-tree-table" title="ref-tree-table" >
+                                
+                                    树表参照 <span>RefTreeTable</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="ref-tree-transfer" class="" id="ref-tree-transfer"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/ref-tree-transfer" title="ref-tree-transfer" >
+                                
+                                    树穿梭参照<span>RefTreeTransfer</span>
+                                
+                            </a>
+                        
+                    </div>
+                <div class="menu-item">
+                        <a name="ref-multiple-table" class="" id="ref-multiple-table"></a>
+                        
+
+                            <a href="/tinper-bee-history/1.6.9/ref-multiple-table" title="ref-multiple-table" >
+                                
+                                    复杂查询表格参照<span>RefMultipleTable</span> 
+                                
+                            </a>
+                        
+                    </div>
+                
+            </li>
+    </ul>
+</div>
+
+        <div class="u-col-xs-12 u-col-sm-9 u-col-md-9 demo-container">
+            
+                <h1 id="table-a-href-https-github-com-tinper-bee-bee-table-edit-master-docs-api-md-style-text-decoration-underline-target-_blank-title-github-i-class-uf-uf-pencil-style-font-size-20px-padding-left-10px-i-a-div-a-class-title-tag-href-https-github-com-tinper-bee-bee-table-target-_blank-i-class-uf-uf-github-c-i-bee-table-a-span-class-title-tag-i-class-uf-uf-treeadd-i-1-6-26-span-a-class-title-tag-href-https-github-com-tinper-bee-bee-table-blob-master-changelog-md-target-_blank-i-class-uf-uf-group-i-changelog-a-a-class-title-tag-href-https-github-com-tinper-bee-bee-table-issues-new-target-_blank-i-class-uf-uf-qm-c-i-issue-a-div-">Table<a href='https://github.com/tinper-bee/bee-table/edit/master/docs/api.md' style='text-decoration: underline;' target='_blank' title='在github上编辑此页'><i class='uf uf-pencil' style='font-size: 20px;padding-left: 10px;'></i></a><div><a class='title-tag' href='https://github.com/tinper-bee/bee-table' target='_blank'><i class='uf uf-github-c'></i>bee-table</a><span class='title-tag'><i class='uf uf-treeadd'></i>1.6.26</span><a class='title-tag' href='https://github.com/tinper-bee/bee-table/blob/master/CHANGELOG.md' target='_blank'><i class='uf uf-group'></i>changelog</a><a class='title-tag' href='https://github.com/tinper-bee/bee-table/issues/new' target='_blank'><i class='uf uf-qm-c'></i>issue</a></div></h1>
+<p>表格是以结构化的方式来展示大量的信息最佳方法，使信息更易于阅读与理解。
+表格轻易就能用简洁和易读的方式来组织数据。它们可用于保存和展示大量的数据，小量的信息，静态数据以及不断地变动的数据。</p>
+<div id="tinperBeeDemo"></div>
+
+<h2 id="-">引入机制</h2>
+<p>import Table from &quot;bee-table&quot;;
+import &#39;bee-table/build/Table.css&#39;;</p>
+<h2 id="api">API</h2>
+<h3 id="table">Table</h3>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">说明</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">data</td>
+<td style="text-align:left">传入的表格数据（key值必需，否则会导致部分功能出现问题。建议使用唯一的值，如id）</td>
+<td style="text-align:left">array</td>
+<td style="text-align:left">[]</td>
+</tr>
+<tr>
+<td style="text-align:left">bordered</td>
+<td style="text-align:left">是否展示外边框和列边框</td>
+<td style="text-align:left">boolean</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">columns</td>
+<td style="text-align:left">列的配置表，具体配置见下表</td>
+<td style="text-align:left">array</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left">defaultExpandAllRows</td>
+<td style="text-align:left">默认是否展开所有行</td>
+<td style="text-align:left">bool</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">expandedRowKeys</td>
+<td style="text-align:left">展开的行，控制属性</td>
+<td style="text-align:left">array</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left">defaultExpandedRowKeys</td>
+<td style="text-align:left">初始扩展行键</td>
+<td style="text-align:left">array</td>
+<td style="text-align:left">[]</td>
+</tr>
+<tr>
+<td style="text-align:left">bodyStyle</td>
+<td style="text-align:left">添加到tablebody上的style</td>
+<td style="text-align:left">object</td>
+<td style="text-align:left">{}</td>
+</tr>
+<tr>
+<td style="text-align:left">style</td>
+<td style="text-align:left">添加到table上的style</td>
+<td style="text-align:left">object</td>
+<td style="text-align:left">{}</td>
+</tr>
+<tr>
+<td style="text-align:left">rowKey</td>
+<td style="text-align:left">如果rowKey是字符串，<code>record [rowKey]</code>将被用作键。如果rowKey是function，<code>rowKey（record, index）</code>的返回值将被用作键。</td>
+<td style="text-align:left">string or Function(record, index):string</td>
+<td style="text-align:left">&#39;key&#39;</td>
+</tr>
+<tr>
+<td style="text-align:left">rowClassName</td>
+<td style="text-align:left">获取行的classname</td>
+<td style="text-align:left">Function(record, index, indent):string</td>
+<td style="text-align:left">() =&gt; &#39;&#39;</td>
+</tr>
+<tr>
+<td style="text-align:left">expandedRowClassName</td>
+<td style="text-align:left">获取展开行的className</td>
+<td style="text-align:left">Function(recode, index, indent):string</td>
+<td style="text-align:left">() =&gt; &#39;&#39;</td>
+</tr>
+<tr>
+<td style="text-align:left">onExpand</td>
+<td style="text-align:left">展开行时的钩子函数</td>
+<td style="text-align:left">Function(expanded, record)</td>
+<td style="text-align:left">() =&gt; &#39;&#39;</td>
+</tr>
+<tr>
+<td style="text-align:left">onExpandedRowsChange</td>
+<td style="text-align:left">函数在扩展行更改时调用</td>
+<td style="text-align:left">Function(expandedRows)</td>
+<td style="text-align:left">() =&gt; &#39;&#39;</td>
+</tr>
+<tr>
+<td style="text-align:left">indentSize</td>
+<td style="text-align:left">indentSize为每个级别的data.i.children，更好地使用column.width指定</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">15</td>
+</tr>
+<tr>
+<td style="text-align:left">onRowClick</td>
+<td style="text-align:left">行的点击事件钩子函数</td>
+<td style="text-align:left">Function(record, index, event)</td>
+<td style="text-align:left">() =&gt; &#39;&#39;</td>
+</tr>
+<tr>
+<td style="text-align:left">onRowDoubleClick</td>
+<td style="text-align:left">行的双击事件钩子函数</td>
+<td style="text-align:left">Function(record, index, event)</td>
+<td style="text-align:left">() =&gt; &#39;&#39;</td>
+</tr>
+<tr>
+<td style="text-align:left">expandIconAsCell</td>
+<td style="text-align:left">是否将expandIcon作为单元格</td>
+<td style="text-align:left">bool</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">expandIconColumnIndex</td>
+<td style="text-align:left">expandIcon的索引，当expandIconAsCell为false时，将插入哪个列</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">0</td>
+</tr>
+<tr>
+<td style="text-align:left">showHeader</td>
+<td style="text-align:left">是否显示表头</td>
+<td style="text-align:left">bool</td>
+<td style="text-align:left">true</td>
+</tr>
+<tr>
+<td style="text-align:left">title</td>
+<td style="text-align:left">表格标题</td>
+<td style="text-align:left">Function</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left">footer</td>
+<td style="text-align:left">表格尾部</td>
+<td style="text-align:left">Function</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left">emptyText</td>
+<td style="text-align:left">无数据时显示的内容</td>
+<td style="text-align:left">Function</td>
+<td style="text-align:left">() =&gt; &#39;No Data&#39;</td>
+</tr>
+<tr>
+<td style="text-align:left">scroll</td>
+<td style="text-align:left">横向或纵向支持滚动，也可用于指定滚动区域的宽高度：{ x: true, y: 300 }</td>
+<td style="text-align:left">object</td>
+<td style="text-align:left">{}</td>
+</tr>
+<tr>
+<td style="text-align:left">rowRef</td>
+<td style="text-align:left">获取行的ref</td>
+<td style="text-align:left">Function(record, index, indent):string</td>
+<td style="text-align:left">() =&gt; null</td>
+</tr>
+<tr>
+<td style="text-align:left">getBodyWrapper</td>
+<td style="text-align:left">添加对table body的包装</td>
+<td style="text-align:left">Function(body)</td>
+<td style="text-align:left">body =&gt; body</td>
+</tr>
+<tr>
+<td style="text-align:left">expandedRowRender</td>
+<td style="text-align:left">额外的展开行</td>
+<td style="text-align:left">Function(record, index, indent):node</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left">expandIconAsCell</td>
+<td style="text-align:left">展开按钮是否单独作为一个单元格</td>
+<td style="text-align:left">bool</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">expandRowByClick</td>
+<td style="text-align:left">设置展开行是否通过点击行触发，此参数需要与上面参数搭配使用（默认是通过点击行前面的加号展开行</td>
+<td style="text-align:left">bool</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">footerScroll</td>
+<td style="text-align:left">表尾和body是否公用同一个横向滚动条。（ 如果footer中也是一个table组件，并且也具有滚动条，那么也需要加入footerScroll参数。 ）</td>
+<td style="text-align:left">bool</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">loading</td>
+<td style="text-align:left">表格是否加载中</td>
+<td style="text-align:left">bool</td>
+<td style="text-align:left">object(详情可以参考上面示例)</td>
+<td>false</td>
+</tr>
+<tr>
+<td style="text-align:left">haveExpandIcon</td>
+<td style="text-align:left">控制是否显示行展开icon.<strong>注：该参数只有在和expandedRowRender同时使用才生效</strong></td>
+<td style="text-align:left">Function(record, index):bool</td>
+<td style="text-align:left">() =&gt;false</td>
+</tr>
+<tr>
+<td style="text-align:left">filterable</td>
+<td style="text-align:left">是否开启根据条件来过滤数据</td>
+<td style="text-align:left">bool</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">filterDelay</td>
+<td style="text-align:left">触发过滤输入的时候的ms延迟时间</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">300</td>
+</tr>
+<tr>
+<td style="text-align:left">onFilterChange</td>
+<td style="text-align:left">触发过滤输入操作以及下拉条件的回调</td>
+<td style="text-align:left">function</td>
+<td style="text-align:left">(field,value,condition) =&gt; ()</td>
+</tr>
+<tr>
+<td style="text-align:left">onFilterClear</td>
+<td style="text-align:left">清除过滤条件的回调函数，回调参数为清空的字段</td>
+<td style="text-align:left">function</td>
+<td style="text-align:left">(field) =&gt; ()</td>
+</tr>
+<tr>
+<td style="text-align:left">headerScroll</td>
+<td style="text-align:left">表头下是否显示滚动条</td>
+<td style="text-align:left">bool</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">sort</td>
+<td style="text-align:left">排序的属性</td>
+<td style="text-align:left">object</td>
+<td style="text-align:left">{  mode:&#39;single&#39;//单列排序,  backSource:false //默认是前端排序，值为true为后端排序 } mode:multiple-多列排序</td>
+</tr>
+<tr>
+<td style="text-align:left">syncHover</td>
+<td style="text-align:left">是否同步Hover状态到左侧Checkbox，关闭此功能有助于提升性能</td>
+<td style="text-align:left">bool</td>
+<td style="text-align:left">true</td>
+</tr>
+<tr>
+<td style="text-align:left">loadBuffer</td>
+<td style="text-align:left">使用BigData高阶组件实现大数据加载时，上下加载的缓存</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">5</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<blockquote>
+<p>快捷键部分参考示例 (快捷键在table中的简单使用应用)</p>
+</blockquote>
+<p><em>注意: data参数中的key值必需，否则会导致部分功能出现问题！建议使用唯一的值，如id</em></p>
+<h3 id="column">Column</h3>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">说明</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">key</td>
+<td style="text-align:left">列的键</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left">className</td>
+<td style="text-align:left">传入列的classname</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left">colSpan</td>
+<td style="text-align:left">该列的colSpan，设置列合并</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left">title</td>
+<td style="text-align:left">列的标题</td>
+<td style="text-align:left">node</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left">dataIndex</td>
+<td style="text-align:left">显示数据记录的字段</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left">width</td>
+<td style="text-align:left">宽度的特定比例根据列的宽度计算</td>
+<td style="text-align:left">String/Number</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left">fixed</td>
+<td style="text-align:left">当表水平滚动时，此列将被固定：true或&#39;left&#39;或&#39;right&#39;</td>
+<td style="text-align:left">true/&#39;left&#39;/&#39;right&#39;</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left">sorter</td>
+<td style="text-align:left">前端列排序方法，只要列上有此属性就说明这列可排序。<strong>注：默认是前端排序</strong></td>
+<td style="text-align:left">function</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left">sorterClick</td>
+<td style="text-align:left">排序的回调函数</td>
+<td style="text-align:left">function</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left">render</td>
+<td style="text-align:left">cell的render函数有三个参数：这个单元格的文本，这行的记录，这行的索引，它返回一个对象：{children：value，props：{colSpan：1，rowSpan：1}} ==&gt;&#39;children&#39;是这个单元格的文本，props是这个单元格的一些设置，可以设置单元格行/列合并</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left">onCellClick</td>
+<td style="text-align:left">单击列的单元格时调用</td>
+<td style="text-align:left">Function(row, event)</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left">order</td>
+<td style="text-align:left">设置排序</td>
+<td style="text-align:left">string（&quot;descend&quot;、&quot;ascend&quot;）</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left">filterType</td>
+<td style="text-align:left">过滤下拉的类型.可选<code>text(文本框)</code>,<code>dropdown(下拉)</code>,<code>date(日期)</code>,<code>daterange(日期范围)</code>,<code>number(数值)</code></td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">text</td>
+</tr>
+<tr>
+<td style="text-align:left">filterDropdown</td>
+<td style="text-align:left">是否显示过滤下拉.可选<code>show</code>,<code>hide</code></td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">show</td>
+</tr>
+<tr>
+<td style="text-align:left">format</td>
+<td style="text-align:left">针对过滤下拉设置日期类的格式</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">YYYY-MM-DD</td>
+</tr>
+<tr>
+<td style="text-align:left">filterDropdownAuto</td>
+<td style="text-align:left">设置下拉条件是否自动设置选项，<code>auto</code>自动根据当前数据生成，<code>manual</code>手动传入，可以使用<code>filterDropdownData</code>来传入自定义数据</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">auto</td>
+</tr>
+<tr>
+<td style="text-align:left">filterDropdownData</td>
+<td style="text-align:left">下拉条件自定义数据，filterDropdownAuto=manual生效，传入格式：[{ key : &quot;自定义&quot;, value : &quot;自定义&quot; }]</td>
+<td style="text-align:left">array</td>
+<td style="text-align:left">[]</td>
+</tr>
+<tr>
+<td style="text-align:left">filterDropdownFocus</td>
+<td style="text-align:left">触发点击下拉条件的回调，一般用于异步点击请求数据使用</td>
+<td style="text-align:left">function</td>
+<td style="text-align:left">() =&gt; ()</td>
+</tr>
+<tr>
+<td style="text-align:left">filterDropdownType</td>
+<td style="text-align:left">下拉条件类型，分为 string 和 number 条件类型</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">string</td>
+</tr>
+<tr>
+<td style="text-align:left">filterDropdownIncludeKeys</td>
+<td style="text-align:left">能够设置指定的下拉条件项，通过设置keys 其中string条件可设置:LIKE,ULIKE,EQ,UEQ,START,END.number条件可设置:GT,GTEQ,LT,LTEQ,EQ,UEQ</td>
+<td style="text-align:left">array</td>
+<td style="text-align:left">[] 不设置此属性为显示所有</td>
+</tr>
+<tr>
+<td style="text-align:left">filterInputNumberOptions</td>
+<td style="text-align:left">数值框接收的props，具体属性参考bee-input-number</td>
+<td style="text-align:left">object</td>
+<td style="text-align:left">null</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="-api">快捷键API</h2>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th style="text-align:left">快捷键说明</th>
+<th>类型</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>onKeyTab</td>
+<td style="text-align:left">tab快捷键，可以处理默认选中第一条数据</td>
+<td>function</td>
+<td>-</td>
+</tr>
+<tr>
+<td>onKeyUp</td>
+<td style="text-align:left">↑(上箭) 快捷键，可以处理table的上一条数据</td>
+<td>function</td>
+<td>-</td>
+</tr>
+<tr>
+<td>onKeyDown</td>
+<td style="text-align:left">↓(下箭)快捷键，可以处理table的下一条数据</td>
+<td>function</td>
+<td>-</td>
+</tr>
+<tr>
+<td>onTableKeyDown</td>
+<td style="text-align:left">触发table的所有快捷键</td>
+<td>function</td>
+<td>-</td>
+</tr>
+<tr>
+<td>tabIndex</td>
+<td style="text-align:left">设置焦点顺序</td>
+<td>number</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="mixin">mixin</h2>
+<p>Table拓展功能方法。注：拼接成复杂功能的table组件不能在render中定义，需要像此例子声明在组件的外侧，不然在操作state会导致功能出现异常</p>
+<h2 id="-">如何引用</h2>
+<p>需要单独的去引用相应的js文件，目录在lib文件夹，示例如下：</p>
+<pre><code class="lang-js">import multiSelect from &quot;tinper-bee/lib/multiSelect.js&quot;;
+</code></pre>
+<h3 id="multiselect">multiSelect</h3>
+<blockquote>
+<p>选中功能组件</p>
+</blockquote>
+<font color="#ccc">
+
+#### <font color="#ccc">multiSelect 废弃部分的API</font>
+
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>multiSelect</td>
+<td>全选功能的配置对象，属性参见下面</td>
+<td>obj</td>
+<td>{}</td>
+</tr>
+<tr>
+<td>multiSelect.type</td>
+<td>全选功能的类型，多选或单选（暂时只支持多选）</td>
+<td>string</td>
+<td>checkbox</td>
+</tr>
+<tr>
+<td>multiSelect.param</td>
+<td>通过设置该参数来设计获取的数据数组，默认返还所有数据</td>
+<td>string</td>
+<td>&#39;&#39;</td>
+</tr>
+<tr>
+<td>getSelectedDataFunc</td>
+<td>返回当前选中的数据数组</td>
+<td>Function</td>
+<td>无</td>
+</tr>
+<tr>
+<td>selectDisabled</td>
+<td>设置某一行数据无法被选中，使用类似于rowClassName</td>
+<td>Function(record, index):bool</td>
+<td>无</td>
+</tr>
+<tr>
+<td>selectedRow</td>
+<td>设置某一行数据是否被选中，使用类似于rowClassName</td>
+<td>Function(record, index):bool</td>
+<td>无</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p></font></p>
+<h4 id="multiselect-api">multiSelect 新增API</h4>
+<blockquote>
+<p>data 数据中新增参数</p>
+</blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>_checked</td>
+<td>设置当前数据是否选中</td>
+<td>boolean</td>
+<td>true/false</td>
+</tr>
+<tr>
+<td>_disabled</td>
+<td>禁用当前选中数据</td>
+<td>boolean</td>
+<td>true/false     </td>
+</tr>
+<tr>
+<td>getSelectedDataFunc</td>
+<td>返回当前选中的数据数组</td>
+<td>Function</td>
+<td>无</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h4 id="-">使用</h4>
+<pre><code class="lang-js">import multiSelect from &quot;tinper-bee/lib/multiSelect.js&quot;;
+import { Table, Checkbox } from &#39;tinper-bee&#39;;
+
+const MultiSelectTable = multiSelect(Table, Checkbox);
+
+</code></pre>
+<h3 id="sort">sort</h3>
+<p>排序功能</p>
+<h4 id="column-">Column新增参数</h4>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sorter</td>
+<td>排序函数，可以自定义</td>
+<td>Function</td>
+<td>无</td>
+</tr>
+<tr>
+<td>sorterClick</td>
+<td>排序钩子函数</td>
+<td>Function</td>
+<td>(coloum,type)</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h4 id="-">使用</h4>
+<pre><code class="lang-js">import sort from &quot;tinper-bee/lib/sort.js&quot;;
+import { Table, Icon } from &#39;tinper-bee&#39;;
+
+const SortTable = sort(Table, Icon);
+
+</code></pre>
+<h3 id="sum">sum</h3>
+<p>合计功能</p>
+<h4 id="column-">Column新增参数</h4>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sumCol</td>
+<td>该列设置为合计列，合计行中会显示合计数据</td>
+<td>boolean</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h4 id="-">使用</h4>
+<pre><code class="lang-js">import sum from &quot;tinper-bee/lib/sum.js&quot;;
+import { Table } from &#39;tinper-bee&#39;;
+
+const SumTable = sum(Table);
+
+</code></pre>
+<h3 id="dragcolumn">dragColumn</h3>
+<p>拖拽列功能</p>
+<h4 id="dragcolumn-">dragColumn新增参数</h4>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dragborder</td>
+<td>拖拽调整列宽度</td>
+<td>boolean</td>
+<td>false</td>
+</tr>
+<tr>
+<td>draggable</td>
+<td>拖拽交换列</td>
+<td>boolean</td>
+<td>false</td>
+</tr>
+<tr>
+<td>onDrop</td>
+<td>拖拽释放回调函数</td>
+<td>function</td>
+<td>() =&gt; {}</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h4 id="-">使用</h4>
+<pre><code class="lang-js">import dragColumn from &quot;tinper-bee/lib/dragColumn.js&quot;;
+import { Table } from &#39;tinper-bee&#39;;
+
+const DragColumnTable = dragColumn(Table);
+
+</code></pre>
+<h3 id="filtercolumn">filterColumn</h3>
+<p>过滤功能</p>
+<h4 id="filtercolumn-">filterColumn新增参数</h4>
+<p>无</p>
+<h4 id="-">使用</h4>
+<pre><code class="lang-js">import filterColumn from &quot;tinper-bee/lib/filterColumn.js&quot;;
+import { Table, Checkbox, Popover, Icon } from &#39;tinper-bee&#39;;
+
+const DragColumnTable = filterColumn(Table, Checkbox, Popover, Icon);
+
+</code></pre>
+<h2 id="rendertype">rendertype</h2>
+<p>在表格中提供了多种rendertype可以供选择，比如下拉框，输入框，日期等</p>
+<h2 id="-">如何引用</h2>
+<p>需要单独的去引用相应的js文件，目录在render文件夹，示例如下：</p>
+<pre><code class="lang-js">import renderInput from &quot;tinper-bee/lib/InputRender.js&quot;;
+
+</code></pre>
+<h3 id="inputrender">InputRender</h3>
+<p>输入框类型render</p>
+<h4 id="-">依赖的组件</h4>
+<p>该render依赖于<code>Icon</code>,<code>FormControl</code>,<code>Form</code>,<code>Tooltip</code>。</p>
+<h4 id="-">配置</h4>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>该输入框获取数据时的key值，该值不能设置重复且必填</td>
+<td>string</td>
+<td>-</td>
+</tr>
+<tr>
+<td>placeholder</td>
+<td>输入框的提示信息</td>
+<td>string</td>
+<td>-</td>
+</tr>
+<tr>
+<td>value</td>
+<td>输入框中的显示值</td>
+<td>string</td>
+<td>无</td>
+</tr>
+<tr>
+<td>isclickTrigger</td>
+<td>是否使用点击触发编辑状态</td>
+<td>boolean</td>
+<td>false</td>
+</tr>
+<tr>
+<td>onChange</td>
+<td>当值发生改变的时候触发的方法</td>
+<td>Function</td>
+<td>无</td>
+</tr>
+<tr>
+<td>format</td>
+<td>浏览态格式化类型，Currency:货币数字;</td>
+<td>string</td>
+<td>无</td>
+</tr>
+<tr>
+<td>formItemClassName</td>
+<td>FormItem的class</td>
+<td>string</td>
+<td>-</td>
+</tr>
+<tr>
+<td>mesClassName</td>
+<td>校验错误信息的class</td>
+<td>string</td>
+<td>-</td>
+</tr>
+<tr>
+<td>isRequire</td>
+<td>是否必填</td>
+<td>bool</td>
+<td>false</td>
+</tr>
+<tr>
+<td>check</td>
+<td>验证的回调函数，参数两个，第一个为校验是否成功<code>true/false</code> 第二个为验证结果对象<code>{name: &quot;&quot;, verify: false, value: &quot;&quot;}</code></td>
+<td>function</td>
+<td>-</td>
+</tr>
+<tr>
+<td>method</td>
+<td>校验方式，change/blur</td>
+<td>string</td>
+<td>-</td>
+</tr>
+<tr>
+<td>errorMessage</td>
+<td>错误提示信息</td>
+<td>dom/string</td>
+<td>&quot;校验失败&quot;</td>
+</tr>
+<tr>
+<td>htmlType</td>
+<td>数值类型，目前支持 email/tel/IDCard/chinese/password&#39;类型</td>
+<td>string</td>
+<td>-</td>
+</tr>
+<tr>
+<td>reg</td>
+<td>校验正则，注：设置 htmlType 后 reg 无效</td>
+<td>regExp</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h4 id="-">使用</h4>
+<pre><code class="lang-js">import renderInput from &quot;tinper-bee/lib/InputRender.js&quot;;
+import { Icon, Form , FormControl } from &#39;tinper-bee&#39;;
+const InputRender = renderInput(Form, FormControl, Icon);
+
+</code></pre>
+<h3 id="daterender">DateRender</h3>
+<p>日期类型render</p>
+<h4 id="-">依赖的组件</h4>
+<p>该render依赖于<code>moment</code>, <code>Datepicker</code>, <code>Icon</code></p>
+<h4 id="-">配置</h4>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>isclickTrigger</td>
+<td>是否使用点击触发编辑状态</td>
+<td>boolean</td>
+<td>false</td>
+</tr>
+<tr>
+<td>type</td>
+<td>控制日期的显示格式，DatePicker、MonthPicker或者WeekPicker，暂时不支持RangePicker</td>
+<td>string</td>
+<td>&quot;DatePicker&quot;</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>注:其他参数参见Datepicker组件参数配置</p>
+<h4 id="-">使用</h4>
+<pre><code class="lang-js">import renderDate from &quot;tinper-bee/lib/DateRender.js&quot;;
+import Datepicker from &quot;tinper-bee/lib/Datepicker&quot;;
+import { Icon } from &#39;tinper-bee&#39;;
+const DateRender = renderDate(Datepicker, Icon);
+
+</code></pre>
+<h3 id="selectrender">SelectRender</h3>
+<p>下拉框类型render</p>
+<h4 id="-">依赖的组件</h4>
+<p>该render依赖于<code>Icon</code>,<code>Select</code></p>
+<h4 id="-">配置</h4>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>isclickTrigger</td>
+<td>是否使用点击触发编辑状态</td>
+<td>boolean</td>
+<td>false</td>
+</tr>
+<tr>
+<td>dataSource</td>
+<td>数据的键值对，在表格浏览态的时候能显示真实的key值。比如<code>[{key:&quot;张三&quot;,value:&quot;01&quot;}]</code></td>
+<td>array</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>注:其他参数参见Select组件参数配置</p>
+<h4 id="-">使用</h4>
+<pre><code class="lang-js">import renderSelect from &quot;tinper-bee/lib/SelectRender.js&quot;;
+import { Icon, Select } from &#39;tinper-bee&#39;;
+const SelectRender = renderSelect(Select, Icon);
+
+</code></pre>
+<h3 id="checkboxrender">CheckboxRender</h3>
+<p>复选框类型render</p>
+<h4 id="-">依赖的组件</h4>
+<p>该render依赖于<code>Icon</code>,<code>Checkbox</code></p>
+<h4 id="-">配置</h4>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>onChange</td>
+<td>修改后触发回调函数</td>
+<td>function</td>
+<td>() =&gt; {}</td>
+</tr>
+<tr>
+<td>value</td>
+<td>设置是否选中值</td>
+<td>boolean</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>注:其他参数参见Checkbox组件参数配置</p>
+<h4 id="-">使用</h4>
+<pre><code class="lang-js">import renderCheckbox from &quot;tinper-bee/lib/CheckboxRender.js&quot;;
+import { Icon, Checkbox } from &#39;tinper-bee&#39;;
+const CheckboxRender = renderCheckbox(Checkbox, Icon);
+
+</code></pre>
+<h3 id="-">使用注意</h3>
+<ul>
+<li><p>如果使用了固定列，请给固定的列设定固定宽度既width属性。</p>
+</li>
+<li><p>在使用expandedRowRender属性扩展表格时，如果同时使用了固定列。
+需要给expandedRowRender中返回的对象添加<code>style=\{{height: xxx}\}</code>,来使扩展后的固定列扩展成一样高度。</p>
+</li>
+</ul>
+
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="//cdn.jsdelivr.net/highlight.js/9.8.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+
+        <script src="//design.yonyoucloud.com/static/react/16.6.0/umd/react.development.js"></script>
+        <script src="//design.yonyoucloud.com/static/react/16.6.0/umd/react-dom.development.js"></script>
+
+    <script src="//design.yonyoucloud.com/static/prop-types/15.6.0/prop-types.min.js"></script>
+    
+        <script src="/bee-table/dist/demo.js"></script>
+    
+
+</body>
+</html>

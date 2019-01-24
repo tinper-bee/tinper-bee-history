@@ -1,35 +1,13 @@
-const http = require('http');
-const fs = require("fs");
-const path = require('path');
-const version = '1.6.9';
+let str = 'href="/ac-drawer#ac-drawer" href="/ac-toast#ac-toast" href="/ac-attachment#ac-attachment"';
 
 
-const callback = (err,msg)=>{
-    if(err){
-        console.log(`${msg}  失败`)
-    }else{
-        console.log(`${msg}  成功`)
-    }
-}
+let array = [];
+
+let a = str.replace(/href="\/(.+?)#.+?"/g,(a,b,c,d,e)=>{
+    array.push(b);
+    return 'href="tinper-bee-history/1.6.9/ac-drawer"'
+})
 
 
-const formatHtml = (html)=>{
-    let versionReg = /最新:v(.+)</;
-    let v = versionReg.exec(html)[1];
-    console.log("-----  "+v)
-}
+console.log(array);
 
-http.get('http://bee.tinper.org/', res=> {
-    let html = '';
-    // 获取页面数据
-    res.on('data', data=> {
-        html += data;
-    });
-    // 数据获取结束
-    res.on('end', ()=>{
-        formatHtml(html)
-        
-    });
-}).on('error', ()=> {
-    console.log('获取数据出错！');
-});

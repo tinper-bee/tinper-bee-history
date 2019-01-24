@@ -1,0 +1,22 @@
+{
+  "name": "tinper-bee-history",
+  "version": "1.0.0",
+  "description": "bee.tinper.org历史版本",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tinper-bee/tinper-bee-history.git"
+  },
+  "keywords": [
+    "tinper"
+  ],
+  "author": "lucian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tinper-bee/tinper-bee-history/issues"
+  },
+  "homepage": "https://github.com/tinper-bee/tinper-bee-history#readme"
+}
