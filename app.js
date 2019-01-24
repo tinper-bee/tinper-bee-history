@@ -76,7 +76,7 @@ const formatHtml = (html)=>{
 
     html = html.replace(/href="\/(.+?)#.+?"/g,(str,item)=>{
         getOtherHtml(item,version)
-        return `href="/tinper-bee-history/${version}/ac-drawer"`;
+        return `href="/tinper-bee-history/${version}/${item}"`;
     })
 
     html = html.replace(/href="\/css/g,`href="/tinper-bee-history/${version}/css`);

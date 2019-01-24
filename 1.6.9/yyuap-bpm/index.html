@@ -1609,7 +1609,7 @@
 首先使用审批面板组件<pre><code class="lang-js">//导入流程审批面板整合组件
 import { BpmTaskApprovalWrap } from &#39;yyuap-bpm&#39;;
 </code></pre>
-导入组件后，使用我们的组件，传入对应的props，这里主要讲解流程图按钮���后续事件如何做<code>onBpmFlowClick</code><pre><code class="lang-js">&lt;BpmTaskApprovalWrap
+导入组件后，使用我们的组件，传入对应的props，这里主要讲解流程图按钮的后续事件如何做<code>onBpmFlowClick</code><pre><code class="lang-js">&lt;BpmTaskApprovalWrap
  id={rowData.id}
  onBpmFlowClick={() =&gt; { this.onClickToBPM(rowData) }}//拿到我们的行数据，主要用id
  appType={appType}
