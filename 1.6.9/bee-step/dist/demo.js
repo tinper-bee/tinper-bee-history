@@ -7480,7 +7480,7 @@
 	  accordion: _propTypes2["default"].bool,
 	  //激活的项
 	  activeKey: _propTypes2["default"].any,
-	  //默��的激活的项
+	  //默认的激活的项
 	  defaultActiveKey: _propTypes2["default"].any,
 	  //选中函数
 	  onSelect: _propTypes2["default"].func,

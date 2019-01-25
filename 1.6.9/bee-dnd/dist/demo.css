@@ -2490,7 +2490,7 @@ textarea {
   width: auto; }
 
 /* ==========================================================================
-   打��样式。内联以避免额外的HTTP请求
+   打印样式。内联以避免额外的HTTP请求
 
    ========================================================================== */
 @media print {
@@ -4937,7 +4937,7 @@ a, .mdl-accordion, .mdl-button, .mdl-card, .mdl-checkbox, .mdl-dropdown-menu,
   .hidden-lg {
     display: none !important; } }
 
-/* 边��� */
+/* 边框 */
 .no-border {
   border-color: transparent;
   border-width: 0; }

@@ -692,7 +692,7 @@
 	  //是否添加折叠
 	  collapsible: _propTypes2["default"].bool,
 	  onSelect: _propTypes2["default"].func,
-	  //头��组件
+	  //头部组件
 	  header: _propTypes2["default"].node,
 	  headerStyle: _propTypes2["default"].object,
 	  id: _propTypes2["default"].oneOfType([_propTypes2["default"].string, _propTypes2["default"].number]),

@@ -1156,7 +1156,7 @@
 	    var status = this.state.status;
 	
 	    if (this.props.unmountOnExit && status === EXITED) {
-	      // 当使用unmountOnExit时，exited为exiting和unmont的过渡状态
+	      // 当使用unmountOnExit时��exited为exiting和unmont的过渡状态
 	      if (this.props["in"]) {
 	        this.performEnter(this.props);
 	      } else {
@@ -4608,7 +4608,7 @@
 	      offset = align.offset || [0, 0];
 	      targetOffset = align.targetOffset || [0, 0];
 	    }
-	    // 2. 只有指定了可以调整当前方向才调��
+	    // 2. 只有指定了可以调整当前方向才调整
 	    newOverflowCfg.adjustX = overflow.adjustX && isStillFailX;
 	    newOverflowCfg.adjustY = overflow.adjustY && isStillFailY;
 	
@@ -4835,7 +4835,7 @@
 	
 	  // 当 width/height 设置为百分比时，通过 pixelLeft 方式转换的 width/height 值
 	  // 一开始就处理了! CUSTOM_STYLE.height,CUSTOM_STYLE.width ,cssHook 解决@2011-08-19
-	  // 在 ie 下不对，需要��接用 offset 方式
+	  // 在 ie 下不对，需要直接用 offset 方式
 	  // borderWidth 等值也有问题，但考虑到 borderWidth 设为百分比的概率很小，这里就不考虑了
 	
 	  // From the awesome hack by Dean Edwards

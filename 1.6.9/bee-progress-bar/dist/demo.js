@@ -4738,7 +4738,7 @@
 	exports['default'] = doAlign;
 	/**
 	 *  2012-04-26 yiminghe@gmail.com
-	 *   - 优化智能对齐算法
+	 *   - 优化智能对齐算���
 	 *   - 慎用 resizeXX
 	 *
 	 *  2011-07-13 yiminghe@gmail.com note:
@@ -4803,7 +4803,7 @@
 	  // 根据 GBS 最新数据，A-Grade Browsers 都已支持 getBoundingClientRect 方法，不用再考虑传统的实现方式
 	  box = elem.getBoundingClientRect();
 	
-	  // ��：jQuery 还考虑减去 docElem.clientLeft/clientTop
+	  // 注：jQuery 还考虑减去 docElem.clientLeft/clientTop
 	  // 但测试发现，这样反而会导致当 html 和 body 有边距/边框样式时，获取的值不正确
 	  // 此外，ie6 会忽略 html 的 margin 值，幸运地是没有谁会去设置 html 的 margin
 	

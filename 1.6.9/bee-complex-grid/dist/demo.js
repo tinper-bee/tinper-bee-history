@@ -6024,7 +6024,7 @@
 	  activeKey: _propTypes2["default"].any,
 	  //默认的激活的项
 	  defaultActiveKey: _propTypes2["default"].any,
-	  //选中函数
+	  //���中函数
 	  onSelect: _propTypes2["default"].func,
 	  role: _propTypes2["default"].string
 	};
@@ -6697,7 +6697,7 @@
 	  };
 	
 	  /**
-	   * 表头menu和表格整体过滤时有冲突，因此添加了回调函数
+	   * 表头menu和表格整体过滤时有冲突，因��添加了回调函数
 	   */
 	
 	
@@ -10344,7 +10344,7 @@
 	  };
 	
 	  /**
-	   * 获取table的��性存放在this.table 中。(公用方法)
+	   * 获取table的属性存放在this.table 中。(公用方法)
 	   */
 	
 	
@@ -24592,7 +24592,7 @@
 	
 	  // 注：jQuery 还考虑减去 docElem.clientLeft/clientTop
 	  // 但测试发现，这样反而会导致当 html 和 body 有边距/边框样式时，获取的值不正确
-	  // 此外，ie6 会忽略 html 的 margin 值，幸���地是没有谁会去设置 html 的 margin
+	  // 此外，ie6 会忽略 html 的 margin 值，幸运地是没有谁会去设置 html 的 margin
 	
 	  x = box.left;
 	  y = box.top;
@@ -33910,7 +33910,7 @@
 	            ss : '%d སྐར་ཆ།',
 	            m : 'སྐར་མ་གཅིག',
 	            mm : '%d སྐར་མ',
-	            h : 'ཆུ་ཚོད་གཅིག',
+	            h : 'ཆུ་���ོད་གཅིག',
 	            hh : '%d ཆུ་ཚོད',
 	            d : 'ཉིན་གཅིག',
 	            dd : '%d ཉིན་',
@@ -34522,7 +34522,7 @@
 	
 	
 	    var cv = moment.defineLocale('cv', {
-	        months : 'кӑрлач_нарӑс_пуш_ака_май_ҫӗртме_утӑ_ҫурла_авӑн_юпа_чӳк_раштав'.split('_'),
+	        months : 'кӑрлач_нарӑс_пуш_��ка_май_ҫӗртме_утӑ_ҫурла_авӑн_юпа_чӳк_раштав'.split('_'),
 	        monthsShort : 'кӑр_нар_пуш_ака_май_ҫӗр_утӑ_ҫур_авн_юпа_чӳк_раш'.split('_'),
 	        weekdays : 'вырсарникун_тунтикун_ытларикун_юнкун_кӗҫнерникун_эрнекун_шӑматкун'.split('_'),
 	        weekdaysShort : 'выр_тун_ытл_юн_кӗҫ_эрн_шӑм'.split('_'),
@@ -37911,7 +37911,7 @@
 	        },
 	        calendar : {
 	            sameDay : '[í dag kl.] LT',
-	            nextDay : '[�� morgun kl.] LT',
+	            nextDay : '[á morgun kl.] LT',
 	            nextWeek : 'dddd [kl.] LT',
 	            lastDay : '[í gær kl.] LT',
 	            lastWeek : '[síðasta] dddd [kl.] LT',
@@ -38238,7 +38238,7 @@
 	        calendar : {
 	            sameDay : '[დღეს] LT[-ზე]',
 	            nextDay : '[ხვალ] LT[-ზე]',
-	            lastDay : '[გუშინ] LT[-ზე]',
+	            lastDay : '[გუშინ] LT[-��ე]',
 	            nextWeek : '[შემდეგ] dddd LT[-ზე]',
 	            lastWeek : '[წინა] dddd LT-ზე',
 	            sameElse : 'L'
@@ -38453,7 +38453,7 @@
 	            }
 	        },
 	        calendar: {
-	            sameDay: '[��្ងៃនេះ ម៉ោង] LT',
+	            sameDay: '[ថ្ងៃនេះ ម៉ោង] LT',
 	            nextDay: '[ស្អែក ម៉ោង] LT',
 	            nextWeek: 'dddd [ម៉ោង] LT',
 	            lastDay: '[ម្សិលមិញ ម៉ោង] LT',
@@ -38751,7 +38751,7 @@
 	    };
 	
 	    var ky = moment.defineLocale('ky', {
-	        months : 'январь_февраль_март_апрель_май_июнь_июль_август_сентябрь_октябрь_ноябрь_декабрь'.split('_'),
+	        months : 'январь_февраль_март_апре��ь_май_июнь_июль_август_сентябрь_октябрь_ноябрь_декабрь'.split('_'),
 	        monthsShort : 'янв_фев_март_апр_май_июнь_июль_авг_сен_окт_ноя_дек'.split('_'),
 	        weekdays : 'Жекшемби_Дүйшөмбү_Шейшемби_Шаршемби_Бейшемби_Жума_Ишемби'.split('_'),
 	        weekdaysShort : 'Жек_Дүй_Шей_Шар_Бей_Жум_Ише'.split('_'),
@@ -42453,7 +42453,7 @@
 	
 	    var ta = moment.defineLocale('ta', {
 	        months : 'ஜனவரி_பிப்ரவரி_மார்ச்_ஏப்ரல்_மே_ஜூன்_ஜூலை_ஆகஸ்ட்_செப்டெம்பர்_அக்டோபர்_நவம்பர்_டிசம்பர்'.split('_'),
-	        monthsShort : 'ஜனவரி_பிப்ரவரி_மார்ச்_ஏப்ரல���_மே_ஜூன்_ஜூலை_ஆகஸ்ட்_செப்டெம்பர்_அக்டோபர்_நவம்பர்_டிசம்பர்'.split('_'),
+	        monthsShort : 'ஜனவரி_பிப்ரவரி_மார்ச்_ஏப்ரல்_மே_ஜூன்_ஜூலை_ஆகஸ்ட்_செப்டெம்பர்_அக்டோபர்_நவம்பர்_டிசம்பர்'.split('_'),
 	        weekdays : 'ஞாயிற்றுக்கிழமை_திங்கட்கிழமை_செவ்வாய்கிழமை_புதன்கிழமை_வியாழக்கிழமை_வெள்ளிக்கிழமை_சனிக்கிழமை'.split('_'),
 	        weekdaysShort : 'ஞாயிறு_திங்கள்_செவ்வாய்_புதன்_வியாழன்_வெள்ளி_சனி'.split('_'),
 	        weekdaysMin : 'ஞா_தி_செ_பு_வி_வெ_ச'.split('_'),
@@ -60691,7 +60691,7 @@
 	            'aria-describedby': overlay.props.id
 	        };
 	
-	        // FIXME: 这里用于传递这个组件上的处理程序的逻辑是不一致的。我们不应该通过任何这些道具。
+	        // FIXME: 这里用于传递这个组件上的处理程序的逻辑是不一致的。我们不应该通过任何���些道具。
 	
 	        triggerProps.onClick = (0, _createChainedFunction2["default"])(childProps.onClick, onClick);
 	
@@ -62873,7 +62873,7 @@
 	     */
 	    showJump: _propTypes2["default"].bool,
 	    /**
-	     * ���示总共条数
+	     * 显示总共条数
 	     */
 	    total: _propTypes2["default"].number,
 	    /** 
