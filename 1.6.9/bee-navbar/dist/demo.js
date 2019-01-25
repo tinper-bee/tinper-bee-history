@@ -1176,7 +1176,7 @@
 	        } else if (status === EXITED) {
 	          this.performEnter(this.props);
 	        }
-	        // 其他，当我们已经输入或输出
+	        // 其他，当我们��经输入或输出
 	      } else {
 	        if (status === ENTERING || status === ENTERED) {
 	          this.performExit(this.props);
@@ -5891,7 +5891,7 @@
 	          t: 'b',
 	          b: 't'
 	        });
-	        // ���移量也反下
+	        // 偏移量也反下
 	        var _newOffset = flipOffset(offset, 1);
 	        var _newTargetOffset = flipOffset(targetOffset, 1);
 	        var _newElFuturePos = (0, _getElFuturePos2['default'])(elRegion, refNodeRegion, _newPoints, _newOffset, _newTargetOffset);
@@ -7386,7 +7386,7 @@
 	    */
 	    colors: _propTypes2["default"].oneOf(['primary', 'accent', 'success', 'info', 'warning', 'danger', 'default']),
 	    /**
-	     * @title ��否禁用
+	     * @title 是否禁用
 	     * @veIgnore
 	     */
 	    disabled: _propTypes2["default"].bool,

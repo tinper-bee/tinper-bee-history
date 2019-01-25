@@ -4666,7 +4666,7 @@
 	    }
 	    var isStillFailX = isFailX(elFuturePos, elRegion, visibleRect);
 	    var isStillFailY = isFailY(elFuturePos, elRegion, visibleRect);
-	    // 检查反下后的位置是否可以放下了，如果仍然放不下：
+	    // ��查反下后的位置是否可以放下了，如果仍然放不下：
 	    // 1. 复原修改过的定位参数
 	    if (isStillFailX || isStillFailY) {
 	      points = align.points;
@@ -6799,7 +6799,7 @@
 	      'aria-describedby': overlay.props.id
 	    };
 	
-	    // FIXME: 这里用于传递这个组件上的处理程序的逻辑是��一致的。我们不应该通过任何这些道具。
+	    // FIXME: 这里用于传递这个组件上的处理程序的逻辑是不一致的。我们不应该通过任何这些道具。
 	
 	    triggerProps.onClick = (0, _createChainedFunction2["default"])(childProps.onClick, onClick);
 	

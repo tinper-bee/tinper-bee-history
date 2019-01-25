@@ -4636,7 +4636,7 @@
 	  // 如果可视区域不能完全放置当前节点时允许调整
 	  if (visibleRect && (overflow.adjustX || overflow.adjustY) && isTgtRegionVisible) {
 	    if (overflow.adjustX) {
-	      // 如果横向不能放下
+	      // 如��横向不能放下
 	      if (isFailX(elFuturePos, elRegion, visibleRect)) {
 	        // 对齐位置反下
 	        var newPoints = flip(points, /[lr]/ig, {
@@ -4802,7 +4802,7 @@
 	  box = elem.getBoundingClientRect();
 	
 	  // 注：jQuery 还考虑减去 docElem.clientLeft/clientTop
-	  // 但测试发现，这样反而会导致当 html 和 body 有边距/边框样式时，获取的值不��确
+	  // 但测试发现，这样反而会导致当 html 和 body 有边距/边框样式时，获取的值不正确
 	  // 此外，ie6 会忽略 html 的 margin 值，幸运地是没有谁会去设置 html 的 margin
 	
 	  x = box.left;

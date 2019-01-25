@@ -1033,7 +1033,7 @@
 	
 	var propTypes = {
 	  /**
-	   * 是否触���动画
+	   * 是否触发动画
 	   */
 	  "in": _propTypes2["default"].bool,
 	

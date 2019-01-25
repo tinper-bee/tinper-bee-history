@@ -4783,7 +4783,7 @@
 	  var doc = elem.ownerDocument;
 	  var body = doc.body;
 	  var docElem = doc && doc.documentElement;
-	  // 根据 GBS 最新数据，A-Grade Browsers 都已支持 getBoundingClientRect 方法，不用再考虑传统的实现方式
+	  // 根据 GBS 最新数据，A-Grade Browsers ��已支持 getBoundingClientRect 方法，不用再考虑传统的实现方式
 	  box = elem.getBoundingClientRect();
 	
 	  // 注：jQuery 还考虑减去 docElem.clientLeft/clientTop

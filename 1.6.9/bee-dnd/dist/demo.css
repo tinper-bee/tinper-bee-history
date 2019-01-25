@@ -2417,7 +2417,7 @@ i.uf {
   padding: 0 5px; }
 
 /*
- * 选���时删除文本阴影，及设置默认选中颜色
+ * 选择时删除文本阴影，及设置默认选中颜色
  */
 ::-moz-selection {
   background: rgb(187,222,251);
@@ -2490,7 +2490,7 @@ textarea {
   width: auto; }
 
 /* ==========================================================================
-   打印样式。内联以避免额外的HTTP请求
+   打��样式。内联以避免额外的HTTP请求
 
    ========================================================================== */
 @media print {
@@ -4937,7 +4937,7 @@ a, .mdl-accordion, .mdl-button, .mdl-card, .mdl-checkbox, .mdl-dropdown-menu,
   .hidden-lg {
     display: none !important; } }
 
-/* 边框 */
+/* 边��� */
 .no-border {
   border-color: transparent;
   border-width: 0; }

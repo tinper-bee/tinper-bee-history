@@ -1046,7 +1046,7 @@
 	
 	var transitionEndEvent = _properties2["default"].end;
 	
-	//设置状态码
+	//���置状态码
 	var UNMOUNTED = exports.UNMOUNTED = 0;
 	var EXITED = exports.EXITED = 1;
 	var ENTERING = exports.ENTERING = 2;
@@ -4609,7 +4609,7 @@
 	
 	/**
 	 * @param el
-	 * @param tgtRegion 参照节点所占的区域: { left, top, width, height }
+	 * @param tgtRegion 参照节���所占的区域: { left, top, width, height }
 	 * @param align
 	 */
 	function doAlign(el, tgtRegion, align, isTgtRegionVisible) {

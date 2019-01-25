@@ -8032,7 +8032,7 @@
 	            if (_this.state.top < _this.props.offsetTop) {
 	                fixStyle = {
 	                    position: "fixed",
-	                    //修改20171102 去掉展示Affix全部内容，若是Affix内容高度大于container可展示，那么Affix��可展示部分
+	                    //修改20171102 去掉展示Affix全部内容，若是Affix内容高度大于container可展示，那么Affix只可展示部分
 	                    top: _this.props.canHidden ? h < 0 ? h : Math.min(h, _this.props.offsetTop) : h < 0 ? 0 : Math.min(h, _this.props.offsetTop),
 	                    left: _this.props.horizontal ? _this.state.initLeft : _this.state.left,
 	                    height: _this.state.height,

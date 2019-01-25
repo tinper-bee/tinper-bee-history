@@ -34522,7 +34522,7 @@
 	
 	
 	    var cv = moment.defineLocale('cv', {
-	        months : 'кӑрлач_нарӑс_пуш_ака_май_ҫӗртм��_утӑ_ҫурла_авӑн_юпа_чӳк_раштав'.split('_'),
+	        months : 'кӑрлач_нарӑс_пуш_ака_май_ҫӗртме_утӑ_ҫурла_авӑн_юпа_чӳк_раштав'.split('_'),
 	        monthsShort : 'кӑр_нар_пуш_ака_май_ҫӗр_утӑ_ҫур_авн_юпа_чӳк_раш'.split('_'),
 	        weekdays : 'вырсарникун_тунтикун_ытларикун_юнкун_кӗҫнерникун_эрнекун_шӑматкун'.split('_'),
 	        weekdaysShort : 'выр_тун_ытл_юн_кӗҫ_эрн_шӑм'.split('_'),
@@ -37074,7 +37074,7 @@
 	            yy: '%d વર્ષ'
 	        },
 	        preparse: function (string) {
-	            return string.replace(/[૧૨૩��૫૬૭૮૯૦]/g, function (match) {
+	            return string.replace(/[૧૨૩૪૫૬૭૮૯૦]/g, function (match) {
 	                return numberMap[match];
 	            });
 	        },
@@ -37911,7 +37911,7 @@
 	        },
 	        calendar : {
 	            sameDay : '[í dag kl.] LT',
-	            nextDay : '[á morgun kl.] LT',
+	            nextDay : '[�� morgun kl.] LT',
 	            nextWeek : 'dddd [kl.] LT',
 	            lastDay : '[í gær kl.] LT',
 	            lastWeek : '[síðasta] dddd [kl.] LT',
@@ -38453,7 +38453,7 @@
 	            }
 	        },
 	        calendar: {
-	            sameDay: '[ថ្ងៃនេះ ម៉ោង] LT',
+	            sameDay: '[��្ងៃនេះ ម៉ោង] LT',
 	            nextDay: '[ស្អែក ម៉ោង] LT',
 	            nextWeek: 'dddd [ម៉ោង] LT',
 	            lastDay: '[ម្សិលមិញ ម៉ោង] LT',
@@ -40703,7 +40703,7 @@
 	            LLLL : 'dddd, D MMMM YYYY, A h:mm ਵਜੇ'
 	        },
 	        calendar : {
-	            sameDay : '[ਅ���] LT',
+	            sameDay : '[ਅਜ] LT',
 	            nextDay : '[ਕਲ] LT',
 	            nextWeek : '[ਅਗਲਾ] dddd, LT',
 	            lastDay : '[ਕਲ] LT',
@@ -42453,7 +42453,7 @@
 	
 	    var ta = moment.defineLocale('ta', {
 	        months : 'ஜனவரி_பிப்ரவரி_மார்ச்_ஏப்ரல்_மே_ஜூன்_ஜூலை_ஆகஸ்ட்_செப்டெம்பர்_அக்டோபர்_நவம்பர்_டிசம்பர்'.split('_'),
-	        monthsShort : 'ஜனவரி_பிப்ரவரி_மார்ச்_ஏப்ரல்_மே_ஜூன்_ஜூலை_ஆகஸ்ட்_செப்டெம்பர்_அக்டோபர்_நவம்பர்_டிசம்பர்'.split('_'),
+	        monthsShort : 'ஜனவரி_பிப்ரவரி_மார்ச்_ஏப்ரல���_மே_ஜூன்_ஜூலை_ஆகஸ்ட்_செப்டெம்பர்_அக்டோபர்_நவம்பர்_டிசம்பர்'.split('_'),
 	        weekdays : 'ஞாயிற்றுக்கிழமை_திங்கட்கிழமை_செவ்வாய்கிழமை_புதன்கிழமை_வியாழக்கிழமை_வெள்ளிக்கிழமை_சனிக்கிழமை'.split('_'),
 	        weekdaysShort : 'ஞாயிறு_திங்கள்_செவ்வாய்_புதன்_வியாழன்_வெள்ளி_சனி'.split('_'),
 	        weekdaysMin : 'ஞா_தி_செ_பு_வி_வெ_ச'.split('_'),
@@ -62873,7 +62873,7 @@
 	     */
 	    showJump: _propTypes2["default"].bool,
 	    /**
-	     * 显示总共条数
+	     * ���示总共条数
 	     */
 	    total: _propTypes2["default"].number,
 	    /** 

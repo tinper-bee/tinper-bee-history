@@ -6197,7 +6197,7 @@
 	          t: 'b',
 	          b: 't'
 	        });
-	        // 偏移量也反下
+	        // 偏移���也反下
 	        var _newOffset = flipOffset(offset, 1);
 	        var _newTargetOffset = flipOffset(targetOffset, 1);
 	        var _newElFuturePos = (0, _getElFuturePos2['default'])(elRegion, refNodeRegion, _newPoints, _newOffset, _newTargetOffset);
