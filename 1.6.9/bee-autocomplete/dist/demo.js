@@ -4594,7 +4594,7 @@
 	      }
 	    }
 	
-	    // 如果失败，重新计算当前节点将要被��置的位置
+	    // 如果失败，重新计算当前节点将要被放置的位置
 	    if (fail) {
 	      elFuturePos = (0, _getElFuturePos2['default'])(elRegion, refNodeRegion, points, offset, targetOffset);
 	      _utils2['default'].mix(newElRegion, elFuturePos);

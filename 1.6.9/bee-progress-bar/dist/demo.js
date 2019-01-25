@@ -4738,7 +4738,7 @@
 	exports['default'] = doAlign;
 	/**
 	 *  2012-04-26 yiminghe@gmail.com
-	 *   - 优化智能对齐算���
+	 *   - 优化智能对齐算法
 	 *   - 慎用 resizeXX
 	 *
 	 *  2011-07-13 yiminghe@gmail.com note:

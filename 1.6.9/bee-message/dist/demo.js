@@ -700,7 +700,7 @@
 	  //footer组件
 	  footer: _propTypes2["default"].node,
 	  footerStyle: _propTypes2["default"].object,
-	  //默认是否打��
+	  //默认是否打开
 	  defaultExpanded: _propTypes2["default"].bool,
 	  //是否打开
 	  expanded: _propTypes2["default"].bool,
@@ -1164,7 +1164,7 @@
 	      return;
 	    }
 	
-	    // 确保只响应prop变化
+	    // 确保只响应prop���化
 	    if (this._needsUpdate) {
 	      this._needsUpdate = false;
 	
@@ -4738,7 +4738,7 @@
 	
 	  // ie 下应该减去窗口的边框吧，毕竟默认 absolute 都是相对窗口定位的
 	  // 窗口边框标准是设 documentElement ,quirks 时设置 body
-	  // 最好禁止在 body 和 html 上边框 ，但 ie < 9 html 默认有 2px ，���去
+	  // 最好禁止在 body 和 html 上边框 ，但 ie < 9 html 默认有 2px ，减去
 	  // 但是非 ie 不可能设置窗口边框，body html 也不是窗口 ,ie 可以通过 html,body 设置
 	  // 标准 ie 下 docElem.clientTop 就是 border-top
 	  // ie7 html 即窗口边框改变不了。永远为 2
@@ -5902,7 +5902,7 @@
 	  accordion: _propTypes2["default"].bool,
 	  //激活的项
 	  activeKey: _propTypes2["default"].any,
-	  //默认的激活的项
+	  //默认的激���的项
 	  defaultActiveKey: _propTypes2["default"].any,
 	  //选中函数
 	  onSelect: _propTypes2["default"].func,

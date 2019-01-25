@@ -697,7 +697,7 @@
 	  defaultExpanded: _propTypes2["default"].bool,
 	  //是否打开
 	  expanded: _propTypes2["default"].bool,
-	  //每个panel的标记
+	  //��个panel的标记
 	  eventKey: _propTypes2["default"].any,
 	  headerRole: _propTypes2["default"].string,
 	  panelRole: _propTypes2["default"].string,
@@ -6024,7 +6024,7 @@
 	  activeKey: _propTypes2["default"].any,
 	  //默认的激活的项
 	  defaultActiveKey: _propTypes2["default"].any,
-	  //���中函数
+	  //选中函数
 	  onSelect: _propTypes2["default"].func,
 	  role: _propTypes2["default"].string
 	};
@@ -6697,7 +6697,7 @@
 	  };
 	
 	  /**
-	   * 表头menu和表格整体过滤时有冲突，因��添加了回调函数
+	   * 表头menu和表格整体过滤时有冲突，因此添加了回调函数
 	   */
 	
 	
@@ -10952,7 +10952,7 @@
 	  return event ? event : window.event;
 	}
 	
-	//获取事件对象目标的兼容性写法
+	//获取事件对象���标的兼容性写法
 	function getTarget(event) {
 	  return event.target || event.srcElement;
 	}
@@ -33762,7 +33762,7 @@
 	        months : 'জানুয়ারী_ফেব্রুয়ারি_মার্চ_এপ্রিল_মে_জুন_জুলাই_আগস্ট_সেপ্টেম্বর_অক্টোবর_নভেম্বর_ডিসেম্বর'.split('_'),
 	        monthsShort : 'জানু_ফেব_মার্চ_এপ্র_মে_জুন_জুল_আগ_সেপ্ট_অক্টো_নভে_ডিসে'.split('_'),
 	        weekdays : 'রবিবার_সোমবার_মঙ্গলবার_বুধবার_বৃহস্পতিবার_শুক্রবার_শনিবার'.split('_'),
-	        weekdaysShort : 'রবি_সোম_মঙ্গল_বুধ_বৃহস্পতি_শুক্র_শনি'.split('_'),
+	        weekdaysShort : 'রবি_সোম_মঙ্গল_বুধ_বৃহস্পতি_শুক��র_শনি'.split('_'),
 	        weekdaysMin : 'রবি_সোম_মঙ্গ_বুধ_বৃহঃ_শুক্র_শনি'.split('_'),
 	        longDateFormat : {
 	            LT : 'A h:mm সময়',
@@ -33910,7 +33910,7 @@
 	            ss : '%d སྐར་ཆ།',
 	            m : 'སྐར་མ་གཅིག',
 	            mm : '%d སྐར་མ',
-	            h : 'ཆུ་���ོད་གཅིག',
+	            h : 'ཆུ་ཚོད་གཅིག',
 	            hh : '%d ཆུ་ཚོད',
 	            d : 'ཉིན་གཅིག',
 	            dd : '%d ཉིན་',
@@ -34522,7 +34522,7 @@
 	
 	
 	    var cv = moment.defineLocale('cv', {
-	        months : 'кӑрлач_нарӑс_пуш_��ка_май_ҫӗртме_утӑ_ҫурла_авӑн_юпа_чӳк_раштав'.split('_'),
+	        months : 'кӑрлач_нарӑс_пуш_ака_май_ҫӗртме_утӑ_ҫурла_авӑн_юпа_чӳк_раштав'.split('_'),
 	        monthsShort : 'кӑр_нар_пуш_ака_май_ҫӗр_утӑ_ҫур_авн_юпа_чӳк_раш'.split('_'),
 	        weekdays : 'вырсарникун_тунтикун_ытларикун_юнкун_кӗҫнерникун_эрнекун_шӑматкун'.split('_'),
 	        weekdaysShort : 'выр_тун_ытл_юн_кӗҫ_эрн_шӑм'.split('_'),
@@ -37141,7 +37141,7 @@
 	        months : 'ינואר_פברואר_מרץ_אפריל_מאי_יוני_יולי_אוגוסט_ספטמבר_אוקטובר_נובמבר_דצמבר'.split('_'),
 	        monthsShort : 'ינו׳_פבר׳_מרץ_אפר׳_מאי_יוני_יולי_אוג׳_ספט׳_אוק׳_נוב׳_דצמ׳'.split('_'),
 	        weekdays : 'ראשון_שני_שלישי_רביעי_חמישי_שישי_שבת'.split('_'),
-	        weekdaysShort : 'א׳_ב׳_ג׳_ד׳_ה׳_ו׳_ש׳'.split('_'),
+	        weekdaysShort : 'א׳_ב׳_ג׳_ד׳_��׳_ו׳_ש׳'.split('_'),
 	        weekdaysMin : 'א_ב_ג_ד_ה_ו_ש'.split('_'),
 	        longDateFormat : {
 	            LT : 'HH:mm',
@@ -38238,7 +38238,7 @@
 	        calendar : {
 	            sameDay : '[დღეს] LT[-ზე]',
 	            nextDay : '[ხვალ] LT[-ზე]',
-	            lastDay : '[გუშინ] LT[-��ე]',
+	            lastDay : '[გუშინ] LT[-ზე]',
 	            nextWeek : '[შემდეგ] dddd LT[-ზე]',
 	            lastWeek : '[წინა] dddd LT-ზე',
 	            sameElse : 'L'
@@ -38479,7 +38479,7 @@
 	        dayOfMonthOrdinalParse : /ទី\d{1,2}/,
 	        ordinal : 'ទី%d',
 	        preparse: function (string) {
-	            return string.replace(/[១២៣៤៥៦៧៨៩០]/g, function (match) {
+	            return string.replace(/[១២៣៤៥៦៧៨៩��]/g, function (match) {
 	                return numberMap[match];
 	            });
 	        },
@@ -38595,7 +38595,7 @@
 	                return hour < 4 ? hour : hour + 12;
 	            } else if (meridiem === 'ಬೆಳಿಗ್ಗೆ') {
 	                return hour;
-	            } else if (meridiem === 'ಮಧ್ಯಾಹ್ನ') {
+	            } else if (meridiem === 'ಮಧ್ಯಾ���್ನ') {
 	                return hour >= 10 ? hour : hour + 12;
 	            } else if (meridiem === 'ಸಂಜೆ') {
 	                return hour + 12;
@@ -38751,7 +38751,7 @@
 	    };
 	
 	    var ky = moment.defineLocale('ky', {
-	        months : 'январь_февраль_март_апре��ь_май_июнь_июль_август_сентябрь_октябрь_ноябрь_декабрь'.split('_'),
+	        months : 'январь_февраль_март_апрель_май_июнь_июль_август_сентябрь_октябрь_ноябрь_декабрь'.split('_'),
 	        monthsShort : 'янв_фев_март_апр_май_июнь_июль_авг_сен_окт_ноя_дек'.split('_'),
 	        weekdays : 'Жекшемби_Дүйшөмбү_Шейшемби_Шаршемби_Бейшемби_Жума_Ишемби'.split('_'),
 	        weekdaysShort : 'Жек_Дүй_Шей_Шар_Бей_Жум_Ише'.split('_'),
@@ -39003,7 +39003,7 @@
 	            hh : '%d ຊົ່ວໂມງ',
 	            d : '1 ມື້',
 	            dd : '%d ມື້',
-	            M : '1 ເດືອນ',
+	            M : '1 ເ���ືອນ',
 	            MM : '%d ເດືອນ',
 	            y : '1 ປີ',
 	            yy : '%d ປີ'
@@ -40151,7 +40151,7 @@
 	    };
 	
 	    var my = moment.defineLocale('my', {
-	        months: 'ဇန်နဝါရီ_ဖေဖော်ဝါရီ_မတ်_ဧပြီ_မေ_ဇွန်_ဇူလိုင်_သြဂုတ်_စက်တင်ဘာ_အောက်တိုဘာ_နိုဝင်ဘာ_ဒီဇင်ဘာ'.split('_'),
+	        months: 'ဇန်��ဝါရီ_ဖေဖော်ဝါရီ_မတ်_ဧပြီ_မေ_ဇွန်_ဇူလိုင်_သြဂုတ်_စက်တင်ဘာ_အောက်တိုဘာ_နိုဝင်ဘာ_ဒီဇင်ဘာ'.split('_'),
 	        monthsShort: 'ဇန်_ဖေ_မတ်_ပြီ_မေ_ဇွန်_လိုင်_သြ_စက်_အောက်_နို_ဒီ'.split('_'),
 	        weekdays: 'တနင်္ဂနွေ_တနင်္လာ_အင်္ဂါ_ဗုဒ္ဓဟူး_ကြာသပတေး_သောကြာ_စနေ'.split('_'),
 	        weekdaysShort: 'နွေ_လာ_ဂါ_ဟူး_ကြာ_သော_နေ'.split('_'),
@@ -40174,7 +40174,7 @@
 	            sameElse: 'L'
 	        },
 	        relativeTime: {
-	            future: 'လာမည့် %s မှာ',
+	            future: 'လာမည့် %s မှ���',
 	            past: 'လွန်ခဲ့သော %s က',
 	            s: 'စက္ကန်.အနည်းငယ်',
 	            ss : '%d စက္ကန့်',
@@ -60691,7 +60691,7 @@
 	            'aria-describedby': overlay.props.id
 	        };
 	
-	        // FIXME: 这里用于传递这个组件上的处理程序的逻辑是不一致的。我们不应该通过任何���些道具。
+	        // FIXME: 这里用于传递这个组件上的处理程序的逻辑是不一致的。我们不应该通过任何这些道具。
 	
 	        triggerProps.onClick = (0, _createChainedFunction2["default"])(childProps.onClick, onClick);
 	

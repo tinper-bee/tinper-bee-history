@@ -1146,7 +1146,7 @@
 	
 	    var initialStatus = void 0;
 	    if (props["in"]) {
-	      // 在componentdidmount时开始���行动画
+	      // 在componentdidmount时开始执行动画
 	      initialStatus = props.transitionAppear ? EXITED : ENTERED;
 	    } else {
 	      initialStatus = props.unmountOnExit ? UNMOUNTED : EXITED;

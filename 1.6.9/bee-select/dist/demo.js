@@ -4608,7 +4608,7 @@
 	  overflow = overflow || {};
 	  var newOverflowCfg = {};
 	  var fail = 0;
-	  // 当前节点可以被放置的显���区域
+	  // 当前节点可以被放置的显示区域
 	  var visibleRect = (0, _getVisibleRectForElement2['default'])(source);
 	  // 当前节点所占的区域, left/top/width/height
 	  var elRegion = (0, _getRegion2['default'])(source);
