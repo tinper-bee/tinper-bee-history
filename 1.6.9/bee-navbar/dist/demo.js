@@ -1176,7 +1176,7 @@
 	        } else if (status === EXITED) {
 	          this.performEnter(this.props);
 	        }
-	        // 其他，当我们��经输入或输出
+	        // 其他，当我们已经输入或输出
 	      } else {
 	        if (status === ENTERING || status === ENTERED) {
 	          this.performExit(this.props);
@@ -5917,7 +5917,7 @@
 	
 	    newOverflowCfg.adjustY = overflow.adjustY && isFailY(elFuturePos, elRegion, visibleRect);
 	
-	    // 确实要调整，甚至可能会调整高度宽度
+	    // 确实要调整，甚至可能会调���高度宽度
 	    if (newOverflowCfg.adjustX || newOverflowCfg.adjustY) {
 	      newElRegion = (0, _adjustForViewport2['default'])(elFuturePos, elRegion, visibleRect, newOverflowCfg);
 	    }

@@ -1148,7 +1148,7 @@
 	
 	    var initialStatus = void 0;
 	    if (props["in"]) {
-	      // 在componentdidmount时开始执行动���
+	      // 在componentdidmount时开始执行动画
 	      initialStatus = props.transitionAppear ? EXITED : ENTERED;
 	    } else {
 	      initialStatus = props.unmountOnExit ? UNMOUNTED : EXITED;
@@ -3394,7 +3394,7 @@
 	      deltaX = -1 * wheelDeltaX / 120;
 	    }
 	
-	    // 默认 deltaY (ie)
+	    // ��认 deltaY (ie)
 	    if (!deltaX && !deltaY) {
 	      deltaY = delta;
 	    }
@@ -7662,7 +7662,7 @@
 	     */
 	    size: _propTypes2["default"].oneOf(['sm', 'xg', 'lg']),
 	    /**
-	     * @title 样式
+	     * @title ��式
 	     */
 	    style: _propTypes2["default"].object,
 	    /**

@@ -2197,7 +2197,7 @@ html {
   -webkit-text-size-adjust: 100%; }
 
 /*
-* ���body占据整个屏幕删除body边距，因此布局容器不会导致额外的溢出。
+* 使body占据整个屏幕删除body边距，因此布局容器不会导致额外的溢出。
 * 去掉默认的margin
 */
 body {

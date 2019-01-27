@@ -346,7 +346,7 @@
 	
 	    var tbClass = [];
 	    /**
-	     * 对传入props做样式转化
+	     * 对传入props做��式转化
 	     * @type {[type]}
 	     */
 	    DEVICE_SIZES.forEach(function (size) {
@@ -2598,7 +2598,7 @@
 	}
 	
 	/**
-	 * 分割要传���父元素和子元素的props
+	 * 分割要传入父元素和子元素的props
 	 * @param  {[object]} props     传入的属性
 	 * @param  {[reactElement]} Component 组件
 	 * @return {[array]}           返回数组，第一个元素为父元素props对象，第二个子元素props对象
@@ -4833,7 +4833,7 @@
 	  // http://msdn.microsoft.com/en-us/library/ms535231.aspx
 	  var ret = elem[CURRENT_STYLE] && elem[CURRENT_STYLE][name];
 	
-	  // 当 width/height 设置为百分比时，通过 pixelLeft 方式转换的 width/height 值
+	  // 当 width/height 设置为百分比时���通过 pixelLeft 方式转换的 width/height 值
 	  // 一开始就处理了! CUSTOM_STYLE.height,CUSTOM_STYLE.width ,cssHook 解决@2011-08-19
 	  // 在 ie 下不对，需要直接用 offset 方式
 	  // borderWidth 等值也有问题，但考虑到 borderWidth 设为百分比的概率很小，这里就不考虑了

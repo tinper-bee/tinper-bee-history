@@ -820,7 +820,7 @@
 	    );
 	  };
 	
-	  //如果有折叠动画，渲染折叠动画
+	  //如果���折叠动画，渲染折叠动画
 	
 	
 	  Panel.prototype.renderCollapsibleBody = function renderCollapsibleBody(id, expanded, role, children, clsPrefix, animationHooks) {

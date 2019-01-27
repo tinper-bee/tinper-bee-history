@@ -1164,7 +1164,7 @@
 	      return;
 	    }
 	
-	    // 确保只响应prop���化
+	    // 确保只响应prop变化
 	    if (this._needsUpdate) {
 	      this._needsUpdate = false;
 	
@@ -5902,7 +5902,7 @@
 	  accordion: _propTypes2["default"].bool,
 	  //激活的项
 	  activeKey: _propTypes2["default"].any,
-	  //默认的激���的项
+	  //默认的激活的项
 	  defaultActiveKey: _propTypes2["default"].any,
 	  //选中函数
 	  onSelect: _propTypes2["default"].func,

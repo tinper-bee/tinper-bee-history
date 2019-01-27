@@ -703,7 +703,7 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
 	
 	var propTypes = {
-	  //是���添加折叠
+	  //是否添加折叠
 	  collapsible: _propTypes2["default"].bool,
 	  onSelect: _propTypes2["default"].func,
 	  //头部组件
@@ -17097,7 +17097,7 @@
 	});
 	
 	/*
-	 得到元���的大小信息
+	 得到元素的大小信息
 	 @param elem
 	 @param name
 	 @param {String} [extra]  'padding' : (css width) + padding

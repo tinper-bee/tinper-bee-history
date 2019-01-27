@@ -3,7 +3,9 @@ const fs = require("fs");
 const path = require('path');
 
 
-let version = '';
+let components=[];
+
+
 
 /**
  * 统一处理callback
@@ -15,7 +17,8 @@ const callback = (err,msg)=>{
         console.log(`${msg}  失败`);
         console.log(err)
     }else{
-        console.log(`${msg}  成功`)
+        console.log(`${msg}  成功`);
+        fs.appendFile(__dirname+'/log.txt',`${msg}  成功\n`,()=>{})
     }
 }
 
@@ -43,14 +46,18 @@ const mkdirs = (dirpath, callback)=> {
  * @param {*} version 
  */
 const getOtherHtml=(url,version)=>{
+
     http.get(`http://bee.tinper.org/${url}#${url}`, res=> {
+        console.log(`我正在请求 ${url} `)
         let html = '';
         // 获取页面数据
         res.on('data', data=> {
             html += data;
+            console.log(`我卡在了 ${url} 不动了~~~`)
         });
         // 数据获取结束
         res.on('end', ()=>{
+            console.log(` ${url} 结束，写入文件`)
             html = html.replace(/href="\/(.+?)#.+?"/g,(str,item)=>{
                 return `href="/tinper-bee-history/${version}/${item}"`;
             })
@@ -61,7 +68,7 @@ const getOtherHtml=(url,version)=>{
                 let regJs = new RegExp('src="\/' + url ,"gim");
                 html = html.replace(regJs,`src="/tinper-bee-history/${version}/${url}`);
             }
-            fs.writeFile(`./${version}/${url}/index.html`, html, (err)=>{callback(err,`写入${url}.html`)});
+            fs.writeFile(`./${version}/${url}/index.html`, html, (err)=>{callback(err,`写入${url}下 index.html`)});
         });
     }).on('error', ()=> {
         console.log('获取数据出错！');
@@ -96,29 +103,29 @@ const formatHtml = (html)=>{
     let versionReg = /最新:v(.+)</;
     version = versionReg.exec(html)[1];//版本号
 
-    mkdirs(version,(err)=>{callback(err,'写入css')});
-    mkdirs(`${version}/css`,(err)=>{callback(err,'写入css')});
+    mkdirs(version,(err)=>{callback(err,'创建版本文件')});
+    mkdirs(`${version}/css`,(err)=>{callback(err,'创建版本css文件')});
 
     html = html.replace(/href="\/(.+?)#.+?"/g,(str,item)=>{
         mkdirs(`${version}/${item}`,(err)=>{callback(err,`创建${item}`)});
         mkdirs(`${version}/${item}/dist`,(err)=>{callback(err,`创建${item} dist`)});
-        getOtherHtml(item,version);
-        getOtherDemo(item,version,'demo.js');
-        getOtherDemo(item,version,'demo.css');
+        components.push(item);
         return `href="/tinper-bee-history/${version}/${item}"`;
     })
-
     html = html.replace(/href="\/css/g,`href="/tinper-bee-history/${version}/css`);
-    fs.writeFile(`./${version}/index.html`, html, (err)=>{callback(err,'写入html')});
-
+    fs.writeFile(`./${version}/index.html`, html,(err)=>{
+        if(!err){
+             components.map((item)=>{
+                getOtherHtml(item,version);
+                getOtherDemo(item,version,'demo.js');
+                getOtherDemo(item,version,'demo.css');
+            })
+        }
+    });
     //写入css
     wirteCss('atom-one-dark.css',version);
     wirteCss('layout.css',version);
     wirteCss('md.css',version);
-
-
-
-
 }
 
 /**

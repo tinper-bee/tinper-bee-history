@@ -1,1 +1,0 @@
-Redirecting to <a href="/">/</a>.
