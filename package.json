@@ -4,7 +4,7 @@
   "description": "bee.tinper.org历史版本",
   "main": "app.js",
   "scripts": {
-    "init": "git submodule init && git submodule update"
+    "init": "node app.js"
   },
   "repository": {
     "type": "git",
