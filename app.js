@@ -26,6 +26,12 @@ let initComponet = async (components)=>{
     }
     await download(`http://bee.tinper.org/${com}#${com}`).then(html=>{
         html = html.toString();
+        if(com.indexOf('bee-')!=-1){
+            let regCss = new RegExp('href="\/' + com ,"gim");
+            html = html.replace(regCss,`href="/tinper-bee-history/${version}/${com}`);
+            let regJs = new RegExp('src="\/' + com ,"gim");
+            html = html.replace(regJs,`src="/tinper-bee-history/${version}/${com}`);
+        }
         html = html.replace(/href="\/css/g, `href="/tinper-bee-history/${version}/css`);
         html = html.replace(/href="\/(.+?)#.+?"/g,(str,item)=>{
             return `href="/tinper-bee-history/${version}/${item}"`;
