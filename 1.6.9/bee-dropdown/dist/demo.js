@@ -4664,7 +4664,7 @@
 	      }
 	    }
 	
-	    // 如果失败，重新计算当前节点���要被放置的位置
+	    // 如果失败，重新计算当前节点将要被放置的位置
 	    if (fail) {
 	      elFuturePos = (0, _getElFuturePos2['default'])(elRegion, tgtRegion, points, offset, targetOffset);
 	      _utils2['default'].mix(newElRegion, elFuturePos);
@@ -16416,7 +16416,7 @@
 	
 	  if (allowHorizontalScroll) {
 	    if (diffTop.left < 0 || diffBottom.left > 0) {
-	      // 强���向上
+	      // 强制向上
 	      if (alignWithLeft === true) {
 	        util.scrollLeft(container, containerScroll.left + diffTop.left);
 	      } else if (alignWithLeft === false) {

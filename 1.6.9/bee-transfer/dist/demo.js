@@ -3394,7 +3394,7 @@
 	      deltaX = -1 * wheelDeltaX / 120;
 	    }
 	
-	    // ��认 deltaY (ie)
+	    // 默认 deltaY (ie)
 	    if (!deltaX && !deltaY) {
 	      deltaY = delta;
 	    }
@@ -7662,7 +7662,7 @@
 	     */
 	    size: _propTypes2["default"].oneOf(['sm', 'xg', 'lg']),
 	    /**
-	     * @title ��式
+	     * @title 样式
 	     */
 	    style: _propTypes2["default"].object,
 	    /**

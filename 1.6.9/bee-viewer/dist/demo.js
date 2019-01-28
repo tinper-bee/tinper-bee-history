@@ -50,7 +50,7 @@
 	
 	var _beePanel = __webpack_require__(8);
 	
-	var _beeButton = __webpack_require__(82);
+	var _beeButton = __webpack_require__(78);
 	
 	var _beeButton2 = _interopRequireDefault(_beeButton);
 	
@@ -62,7 +62,7 @@
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _src = __webpack_require__(84);
+	var _src = __webpack_require__(80);
 	
 	var _src2 = _interopRequireDefault(_src);
 	
@@ -80,7 +80,7 @@
 	
 	var CARETUP = _react2['default'].createElement('i', { className: 'uf uf-arrow-up' });
 	
-	var Demo1 = __webpack_require__(87);var Demo2 = __webpack_require__(88);var Demo3 = __webpack_require__(89);var DemoArray = [{ "example": _react2['default'].createElement(Demo1, null), "title": " 单个图片查看", "code": "/**\n*\n* @title 单个图片查看\n* @description 单个图片查看\n*\n*/\nimport React, { Component } from 'react';\nimport { Viewer } from 'tinper-bee';\n\nclass Demo1 extends Component {\n\n    shown=(e)=>{\n        console.log(e,'shwon')\n    }\n    hidden=(e)=>{\n        console.log(e,'hidden')\n    }\n    render () {\n        return (\n            <div className='demo'>\n                <Viewer shown={this.shown} hidden={this.hidden}>\n                    <img id=\"image\" src='http://design.yonyoucloud.com/static/bee.tinper.org-demo/swiper-demo-1-min.jpg' alt=\"Picture\"/>\n                </Viewer>\n            </div>\n        )\n    }\n}\n", "desc": " 单个图片查看" }, { "example": _react2['default'].createElement(Demo2, null), "title": " 图片列表查看", "code": "/**\n*\n* @title 图片列表查看\n* @description 图片列表查看。 img 的 data-original 写高清大图地址。src写缩略图地址\n*\n*/\nimport React, { Component } from 'react';\nimport { Viewer } from 'tinper-bee';\n\nclass Demo2 extends Component {\n\n    render () {\n        return (\n            <div className='demo'>\n                <Viewer>\n                    <div>\n                        <img data-original=\"http://design.yonyoucloud.com/static/bee.tinper.org-demo/swiper-demo-5-min.jpg\" src='http://design.yonyoucloud.com/static/bee.tinper.org-demo/swiper-demo-1-min.jpg' alt=\"Picture\"/>\n                        <img data-original=\"http://design.yonyoucloud.com/static/bee.tinper.org-demo/swiper-demo-4-min.jpg\" src='http://design.yonyoucloud.com/static/bee.tinper.org-demo/swiper-demo-2-min.jpg' alt=\"Picture\"/>\n                        <img data-original=\"http://design.yonyoucloud.com/static/bee.tinper.org-demo/swiper-demo-3-min.jpg\" src='http://design.yonyoucloud.com/static/bee.tinper.org-demo/swiper-demo-3-min.jpg' alt=\"Picture\"/>\n                        <img data-original=\"http://design.yonyoucloud.com/static/bee.tinper.org-demo/swiper-demo-2-min.jpg\" src='http://design.yonyoucloud.com/static/bee.tinper.org-demo/swiper-demo-4-min.jpg' alt=\"Picture\"/>\n                        <img data-original=\"http://design.yonyoucloud.com/static/bee.tinper.org-demo/swiper-demo-1-min.jpg\" src='http://design.yonyoucloud.com/static/bee.tinper.org-demo/swiper-demo-5-min.jpg' alt=\"Picture\"/>\n                    </div>\n                </Viewer>\n            </div>\n            \n        )\n    }\n}\n", "desc": " 图片列表查看。 img 的 data-original 写高清大图地址。src写缩略图地址" }, { "example": _react2['default'].createElement(Demo3, null), "title": " 异步加载图片", "code": "/**\n*\n* @title 异步加载图片\n* @description 设置  asyncLoad={true} \n*\n*/\nimport React, { Component } from 'react';\nimport { Viewer, Button } from 'tinper-bee';\n\nclass Demo3 extends Component {\n    constructor(props){\n        super(props);\n        this.state = {\n            pictureSrc: [],\n        }\n    }\n\n    loadPic=()=>{\n        window.setTimeout(()=>{\n            this.setState({\n                pictureSrc: [\n                    'http://design.yonyoucloud.com/static/bee.tinper.org-demo/swiper-demo-1-min.jpg'\n                ]\n            })\n        },100)\n    }\n\n    componentWillMount(){\n        this.loadPic();\n    }\n    addPicture=()=>{\n        let pictureSrc = this.state.pictureSrc;\n        pictureSrc.push('http://design.yonyoucloud.com/static/bee.tinper.org-demo/swiper-demo-2-min.jpg');\n        this.setState({\n            pictureSrc\n        })\n    }\n\n    render () {\n        return (\n            <div className='demo'>\n                <Button onClick={this.addPicture} style={{'marginBottom':'10px'}}>点击新增图片</Button>\n                <Viewer asyncLoad={true} >\n                    <div>\n                        {this.state.pictureSrc?\n                            this.state.pictureSrc.map((item,index) => {\n                                return (<img  key={index} src={item} alt=\"Picture\"/>)\n                            }) :null\n                        }\n                    </div>\n                </Viewer>\n            </div>\n            \n        )\n    }\n}\n", "desc": " 设置  asyncLoad={true} " }];
+	var Demo1 = __webpack_require__(83);var Demo2 = __webpack_require__(84);var Demo3 = __webpack_require__(85);var DemoArray = [{ "example": _react2['default'].createElement(Demo1, null), "title": " 单个图片查看", "code": "/**\n*\n* @title 单个图片查看\n* @description 单个图片查看\n*\n*/\nimport React, { Component } from 'react';\nimport { Viewer } from 'tinper-bee';\n\nclass Demo1 extends Component {\n\n    shown=(e)=>{\n        console.log(e,'shwon')\n    }\n    hidden=(e)=>{\n        console.log(e,'hidden')\n    }\n    render () {\n        return (\n            <div className='demo'>\n                <Viewer shown={this.shown} hidden={this.hidden}>\n                    <img id=\"image\" src='http://design.yonyoucloud.com/static/bee.tinper.org-demo/swiper-demo-1-min.jpg' alt=\"Picture\"/>\n                </Viewer>\n            </div>\n        )\n    }\n}\n", "desc": " 单个图片查看" }, { "example": _react2['default'].createElement(Demo2, null), "title": " 图片列表查看", "code": "/**\n*\n* @title 图片列表查看\n* @description 图片列表查看。 img 的 data-original 写高清大图地址。src写缩略图地址\n*\n*/\nimport React, { Component } from 'react';\nimport { Viewer } from 'tinper-bee';\n\nclass Demo2 extends Component {\n\n    render () {\n        return (\n            <div className='demo'>\n                <Viewer>\n                    <div>\n                        <img data-original=\"http://design.yonyoucloud.com/static/bee.tinper.org-demo/swiper-demo-5-min.jpg\" src='http://design.yonyoucloud.com/static/bee.tinper.org-demo/swiper-demo-1-min.jpg' alt=\"Picture\"/>\n                        <img data-original=\"http://design.yonyoucloud.com/static/bee.tinper.org-demo/swiper-demo-4-min.jpg\" src='http://design.yonyoucloud.com/static/bee.tinper.org-demo/swiper-demo-2-min.jpg' alt=\"Picture\"/>\n                        <img data-original=\"http://design.yonyoucloud.com/static/bee.tinper.org-demo/swiper-demo-3-min.jpg\" src='http://design.yonyoucloud.com/static/bee.tinper.org-demo/swiper-demo-3-min.jpg' alt=\"Picture\"/>\n                        <img data-original=\"http://design.yonyoucloud.com/static/bee.tinper.org-demo/swiper-demo-2-min.jpg\" src='http://design.yonyoucloud.com/static/bee.tinper.org-demo/swiper-demo-4-min.jpg' alt=\"Picture\"/>\n                        <img data-original=\"http://design.yonyoucloud.com/static/bee.tinper.org-demo/swiper-demo-1-min.jpg\" src='http://design.yonyoucloud.com/static/bee.tinper.org-demo/swiper-demo-5-min.jpg' alt=\"Picture\"/>\n                    </div>\n                </Viewer>\n            </div>\n            \n        )\n    }\n}\n", "desc": " 图片列表查看。 img 的 data-original 写高清大图地址。src写缩略图地址" }, { "example": _react2['default'].createElement(Demo3, null), "title": " 异步加载图片", "code": "/**\n*\n* @title 异步加载图片\n* @description 设置  asyncLoad={true} \n*\n*/\nimport React, { Component } from 'react';\nimport { Viewer, Button } from 'tinper-bee';\n\nclass Demo3 extends Component {\n    constructor(props){\n        super(props);\n        this.state = {\n            pictureSrc: [],\n        }\n    }\n\n    loadPic=()=>{\n        window.setTimeout(()=>{\n            this.setState({\n                pictureSrc: [\n                    'http://design.yonyoucloud.com/static/bee.tinper.org-demo/swiper-demo-1-min.jpg'\n                ]\n            })\n        },100)\n    }\n\n    componentWillMount(){\n        this.loadPic();\n    }\n    addPicture=()=>{\n        let pictureSrc = this.state.pictureSrc;\n        pictureSrc.push('http://design.yonyoucloud.com/static/bee.tinper.org-demo/swiper-demo-2-min.jpg');\n        this.setState({\n            pictureSrc\n        })\n    }\n\n    render () {\n        return (\n            <div className='demo'>\n                <Button onClick={this.addPicture} style={{'marginBottom':'10px'}}>点击新增图片</Button>\n                <Viewer asyncLoad={true} >\n                    <div>\n                        {this.state.pictureSrc?\n                            this.state.pictureSrc.map((item,index) => {\n                                return (<img  key={index} src={item} alt=\"Picture\"/>)\n                            }) :null\n                        }\n                    </div>\n                </Viewer>\n            </div>\n            \n        )\n    }\n}\n", "desc": " 设置  asyncLoad={true} " }];
 	
 	var Demo = function (_Component) {
 	    _inherits(Demo, _Component);
@@ -632,7 +632,7 @@
 	
 	var _Panel3 = _interopRequireDefault(_Panel2);
 	
-	var _PanelGroup2 = __webpack_require__(81);
+	var _PanelGroup2 = __webpack_require__(77);
 	
 	var _PanelGroup3 = _interopRequireDefault(_PanelGroup2);
 	
@@ -671,7 +671,7 @@
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _copyToClipboard = __webpack_require__(79);
+	var _copyToClipboard = __webpack_require__(75);
 	
 	var _copyToClipboard2 = _interopRequireDefault(_copyToClipboard);
 	
@@ -866,7 +866,7 @@
 	        'div',
 	        { key: children.length, className: bodyClassName },
 	        bodyChildren,
-	        copyable && _react2["default"].createElement('i', { className: clsPrefix + '-copy uf uf-files-o', onClick: self.copyDemo })
+	        copyable && _react2["default"].createElement('i', { className: 'uf uf-files-o', onClick: self.copyDemo })
 	      ));
 	      bodyChildren = [];
 	    }
@@ -4776,7 +4776,7 @@
 	  box = elem.getBoundingClientRect();
 	
 	  // 注：jQuery 还考虑减去 docElem.clientLeft/clientTop
-	  // 但测试发现���这样反而会导致当 html 和 body 有边距/边框样式时，获取的值不正确
+	  // 但测试发现，这样反而会导致当 html 和 body 有边距/边框样式时，获取的值不正确
 	  // 此外，ie6 会忽略 html 的 margin 值，幸运地是没有谁会去设置 html 的 margin
 	
 	  x = box.left;
@@ -4800,7 +4800,7 @@
 	  // 但是非 ie 不可能设置窗口边框，body html 也不是窗口 ,ie 可以通过 html,body 设置
 	  // 标准 ie 下 docElem.clientTop 就是 border-top
 	  // ie7 html 即窗口边框改变不了。永远为 2
-	  // 但标准 firefox/chrome/ie9 下 docElem.clientTop 是窗口边框，即��设了 border-top 也为 0
+	  // 但标准 firefox/chrome/ie9 下 docElem.clientTop 是窗口边框，即使设了 border-top 也为 0
 	
 	  x -= docElem.clientLeft || body.clientLeft || 0;
 	  y -= docElem.clientTop || body.clientTop || 0;
@@ -6127,33 +6127,24 @@
 	function getMessageInstance() {
 	    var position = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'top';
 	    var callback = arguments[1];
-	    var keyboard = arguments[2];
-	    var onEscapeKeyUp = arguments[3];
 	
 	    if (messageInstance) {
 	        callback(messageInstance);
 	        return;
 	    }
 	    var style = positionObj[position].notificationStyle;
-	    var instanceObj = {
+	    _beeNotification2["default"].newInstance({
 	        clsPrefix: clsPrefix,
 	        transitionName: clsPrefix + '-' + positionObj[position].transitionName,
 	        style: style, // 覆盖原来的样式
 	        position: ''
-	    };
-	    if (typeof keyboard === 'boolean') {
-	        instanceObj.keyboard = keyboard;
-	    }
-	    if (typeof onEscapeKeyUp === 'function') {
-	        instanceObj.onEscapeKeyUp = onEscapeKeyUp;
-	    }
-	    _beeNotification2["default"].newInstance(instanceObj, function (instance) {
+	    }, function (instance) {
 	        messageInstance = instance;
 	        callback(instance);
 	    });
 	}
 	
-	function notice(content, duration, type, onClose, position, style, keyboard, onEscapeKeyUp, showIcon) {
+	function notice(content, duration, type, onClose, position, style) {
 	    var iconType = {
 	        info: 'uf uf-i-c-2',
 	        success: 'uf uf-correct',
@@ -6179,11 +6170,11 @@
 	            content: _react2["default"].createElement(
 	                'div',
 	                null,
-	                showIcon ? _react2["default"].createElement(
+	                _react2["default"].createElement(
 	                    'div',
 	                    { className: clsPrefix + '-notice-description-icon' },
 	                    _react2["default"].createElement('i', { className: (0, _classnames2["default"])(iconType) })
-	                ) : null,
+	                ),
 	                _react2["default"].createElement(
 	                    'div',
 	                    { className: clsPrefix + '-notice-description-content' },
@@ -6192,7 +6183,7 @@
 	            ),
 	            onClose: onClose
 	        });
-	    }, keyboard, onEscapeKeyUp);
+	    });
 	    return function () {
 	        var target = key++;
 	        return function () {
@@ -6211,8 +6202,7 @@
 	        var onClose = obj.onClose || noop;
 	        var position = obj.position || "top";
 	        var style = obj.style || {};
-	        var showIcon = obj.showIcon || false;
-	        return notice(content, duration, color, onClose, position, style, obj.keyboard, obj.onEscapeKeyUp, showIcon);
+	        return notice(content, duration, color, onClose, position, style);
 	    },
 	    config: function config(options) {
 	        if (options.top !== undefined) {
@@ -6294,19 +6284,11 @@
 	
 	var _createChainedFunction2 = _interopRequireDefault(_createChainedFunction);
 	
-	var _ownerDocument = __webpack_require__(74);
-	
-	var _ownerDocument2 = _interopRequireDefault(_ownerDocument);
-	
-	var _addEventListener = __webpack_require__(76);
-	
-	var _addEventListener2 = _interopRequireDefault(_addEventListener);
-	
 	var _classnames = __webpack_require__(3);
 	
 	var _classnames2 = _interopRequireDefault(_classnames);
 	
-	var _Notice = __webpack_require__(78);
+	var _Notice = __webpack_require__(74);
 	
 	var _Notice2 = _interopRequireDefault(_Notice);
 	
@@ -6335,15 +6317,12 @@
 	  style: _propTypes2["default"].object,
 	  position: _propTypes2["default"].oneOf(['topRight', 'bottomRight', '']),
 	  transitionName: _propTypes2["default"].string,
-	  keyboard: _propTypes2["default"].bool, // 按esc键是否关闭notice
-	  onEscapeKeyUp: _propTypes2["default"].func, // 设置esc键特殊钩子函数
 	  animation: _propTypes2["default"].oneOfType([_propTypes2["default"].string, _propTypes2["default"].object])
 	};
 	
 	var defaultProps = {
 	  clsPrefix: 'u-notification',
 	  animation: 'fade',
-	  keyboard: true,
 	  position: 'topRight'
 	};
 	
@@ -6355,20 +6334,6 @@
 	
 	    var _this = _possibleConstructorReturn(this, _Component.call(this, props));
 	
-	    _this.handleDocumentKeyUp = function (e) {
-	      if (_this.props.keyboard && e.keyCode === 27 && _this.state.notices.length) {
-	        _this.setState(function (previousState) {
-	          previousState.notices.shift();
-	          return {
-	            notices: previousState.notices
-	          };
-	        });
-	        if (_this.props.onEscapeKeyUp) {
-	          _this.props.onEscapeKeyUp(e);
-	        }
-	      }
-	    };
-	
 	    _this.state = {
 	      notices: []
 	    };
@@ -6377,16 +6342,6 @@
 	
 	    return _this;
 	  }
-	
-	  Notification.prototype.componentDidMount = function componentDidMount() {
-	    // 给document绑定keyup事件
-	    var doc = (0, _ownerDocument2["default"])(this);
-	    this._onDocumentKeyupListener = (0, _addEventListener2["default"])(doc, 'keyup', this.handleDocumentKeyUp);
-	  };
-	
-	  Notification.prototype.componentWillUnmount = function componentWillUnmount() {
-	    this._onDocumentKeyupListener.remove();
-	  };
 	
 	  Notification.prototype.getTransitionName = function getTransitionName() {
 	    var props = this.props;
@@ -6420,11 +6375,6 @@
 	      };
 	    });
 	  };
-	
-	  /**
-	   * 处理绑定在document上的keyup事件
-	   */
-	
 	
 	  Notification.prototype.render = function render() {
 	    var _this2 = this,
@@ -7214,108 +7164,6 @@
 	  value: true
 	});
 	
-	exports["default"] = function (componentOrElement) {
-	  return (0, _ownerDocument2["default"])(_reactDom2["default"].findDOMNode(componentOrElement));
-	};
-	
-	var _reactDom = __webpack_require__(12);
-	
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-	
-	var _ownerDocument = __webpack_require__(75);
-	
-	var _ownerDocument2 = _interopRequireDefault(_ownerDocument);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-	
-	module.exports = exports['default'];
-
-/***/ }),
-/* 75 */
-/***/ (function(module, exports) {
-
-	"use strict";
-	
-	exports.__esModule = true;
-	exports.default = ownerDocument;
-	
-	function ownerDocument(node) {
-	  return node && node.ownerDocument || document;
-	}
-	
-	module.exports = exports["default"];
-
-/***/ }),
-/* 76 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	exports["default"] = function (node, event, handler, capture) {
-	  (0, _on2["default"])(node, event, handler, capture);
-	
-	  return {
-	    remove: function remove() {
-	      (0, _off2["default"])(node, event, handler, capture);
-	    }
-	  };
-	};
-	
-	var _on = __webpack_require__(16);
-	
-	var _on2 = _interopRequireDefault(_on);
-	
-	var _off = __webpack_require__(77);
-	
-	var _off2 = _interopRequireDefault(_off);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-	
-	module.exports = exports['default'];
-
-/***/ }),
-/* 77 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	var _interopRequireDefault = __webpack_require__(14);
-	
-	exports.__esModule = true;
-	exports.default = void 0;
-	
-	var _inDOM = _interopRequireDefault(__webpack_require__(15));
-	
-	var off = function off() {};
-	
-	if (_inDOM.default) {
-	  off = function () {
-	    if (document.addEventListener) return function (node, eventName, handler, capture) {
-	      return node.removeEventListener(eventName, handler, capture || false);
-	    };else if (document.attachEvent) return function (node, eventName, handler) {
-	      return node.detachEvent('on' + eventName, handler);
-	    };
-	  }();
-	}
-	
-	var _default = off;
-	exports.default = _default;
-	module.exports = exports["default"];
-
-/***/ }),
-/* 78 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
 	var _react = __webpack_require__(4);
 	
 	var _react2 = _interopRequireDefault(_react);
@@ -7450,12 +7298,12 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 79 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var deselectCurrent = __webpack_require__(80);
+	var deselectCurrent = __webpack_require__(76);
 	
 	var defaultMessage = 'Copy to clipboard: #{key}, Enter';
 	
@@ -7534,7 +7382,7 @@
 
 
 /***/ }),
-/* 80 */
+/* 76 */
 /***/ (function(module, exports) {
 
 	
@@ -7579,7 +7427,7 @@
 
 
 /***/ }),
-/* 81 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7726,7 +7574,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 82 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7735,7 +7583,7 @@
 	  value: true
 	});
 	
-	var _Button = __webpack_require__(83);
+	var _Button = __webpack_require__(79);
 	
 	var _Button2 = _interopRequireDefault(_Button);
 	
@@ -7745,7 +7593,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 83 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7914,7 +7762,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 84 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7923,17 +7771,17 @@
 	  value: true
 	});
 	
-	var _Viewer = __webpack_require__(85);
+	var _Viewer = __webpack_require__(81);
 	
 	var _Viewer2 = _interopRequireDefault(_Viewer);
-
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
+	
 	exports['default'] = _Viewer2['default'];
 	module.exports = exports['default'];
 
 /***/ }),
-/* 85 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7956,7 +7804,7 @@
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _viewerjs = __webpack_require__(86);
+	var _viewerjs = __webpack_require__(82);
 	
 	var _viewerjs2 = _interopRequireDefault(_viewerjs);
 	
@@ -8048,17 +7896,17 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 86 */
+/* 82 */
 /***/ (function(module, exports) {
 
 	/*!
-	 * Viewer.js v1.3.1
+	 * Viewer.js v1.3.0
 	 * https://fengyuanchen.github.io/viewerjs
 	 *
 	 * Copyright 2015-present Chen Fengyuan
 	 * Released under the MIT license
 	 *
-	 * Date: 2018-12-09T07:48:29.436Z
+	 * Date: 2018-10-25T12:41:54.899Z
 	 */
 	
 	'use strict';
@@ -8299,10 +8147,8 @@
 	
 	var TEMPLATE = '<div class="viewer-container" touch-action="none">' + '<div class="viewer-canvas"></div>' + '<div class="viewer-footer">' + '<div class="viewer-title"></div>' + '<div class="viewer-toolbar"></div>' + '<div class="viewer-navbar">' + '<ul class="viewer-list"></ul>' + '</div>' + '</div>' + '<div class="viewer-tooltip"></div>' + '<div role="button" class="viewer-button" data-viewer-action="mix"></div>' + '<div class="viewer-player"></div>' + '</div>';
 	
-	var IS_BROWSER = typeof window !== 'undefined';
-	var WINDOW = IS_BROWSER ? window : {};
-	var IS_TOUCH_DEVICE = IS_BROWSER ? 'ontouchstart' in WINDOW.document.documentElement : false;
-	var HAS_POINTER_EVENT = IS_BROWSER ? 'PointerEvent' in WINDOW : false;
+	var IN_BROWSER = typeof window !== 'undefined';
+	var WINDOW = IN_BROWSER ? window : {};
 	var NAMESPACE = 'viewer'; // Actions
 	
 	var ACTION_MOVE = 'move';
@@ -8334,12 +8180,9 @@
 	var EVENT_HIDE = 'hide';
 	var EVENT_KEY_DOWN = 'keydown';
 	var EVENT_LOAD = 'load';
-	var EVENT_TOUCH_START = IS_TOUCH_DEVICE ? 'touchstart' : 'mousedown';
-	var EVENT_TOUCH_MOVE = IS_TOUCH_DEVICE ? 'touchmove' : 'mousemove';
-	var EVENT_TOUCH_END = IS_TOUCH_DEVICE ? 'touchend touchcancel' : 'mouseup';
-	var EVENT_POINTER_DOWN = HAS_POINTER_EVENT ? 'pointerdown' : EVENT_TOUCH_START;
-	var EVENT_POINTER_MOVE = HAS_POINTER_EVENT ? 'pointermove' : EVENT_TOUCH_MOVE;
-	var EVENT_POINTER_UP = HAS_POINTER_EVENT ? 'pointerup pointercancel' : EVENT_TOUCH_END;
+	var EVENT_POINTER_DOWN = WINDOW.PointerEvent ? 'pointerdown' : 'touchstart mousedown';
+	var EVENT_POINTER_MOVE = WINDOW.PointerEvent ? 'pointermove' : 'touchmove mousemove';
+	var EVENT_POINTER_UP = WINDOW.PointerEvent ? 'pointerup pointercancel' : 'touchend touchcancel mouseup';
 	var EVENT_READY = 'ready';
 	var EVENT_RESIZE = 'resize';
 	var EVENT_SHOW = 'show';
@@ -8351,11 +8194,10 @@
 	var EVENT_ZOOM = 'zoom';
 	var EVENT_ZOOMED = 'zoomed'; // Data keys
 	
-	var DATA_ACTION = "".concat(NAMESPACE, "Action"); // RegExps
+	var DATA_ACTION = "".concat(NAMESPACE, "Action");
+	var BUTTONS = ['zoom-in', 'zoom-out', 'one-to-one', 'reset', 'prev', 'play', 'next', 'rotate-left', 'rotate-right', 'flip-horizontal', 'flip-vertical']; // RegExps
 	
-	var REGEXP_SPACES = /\s\s*/; // Misc
-	
-	var BUTTONS = ['zoom-in', 'zoom-out', 'one-to-one', 'reset', 'prev', 'play', 'next', 'rotate-left', 'rotate-right', 'flip-horizontal', 'flip-vertical'];
+	var REGEXP_SPACES = /\s\s*/;
 	
 	/**
 	 * Check if the given value is a string.
@@ -8414,7 +8256,7 @@
 	    var _constructor = value.constructor;
 	    var prototype = _constructor.prototype;
 	    return _constructor && prototype && hasOwnProperty.call(prototype, 'isPrototypeOf');
-	  } catch (error) {
+	  } catch (e) {
 	    return false;
 	  }
 	}
@@ -8639,7 +8481,7 @@
 	var onceSupported = function () {
 	  var supported = false;
 	
-	  if (IS_BROWSER) {
+	  if (IN_BROWSER) {
 	    var once = false;
 	
 	    var listener = function listener() {};
@@ -8930,7 +8772,6 @@
 	    endY: pageY
 	  };
 	  return endOnly ? end : assign({
-	    timeStamp: Date.now(),
 	    startX: pageX,
 	    startY: pageY
 	  }, end);
@@ -9179,53 +9020,49 @@
 	
 	var events = {
 	  bind: function bind() {
-	    var options = this.options,
-	        viewer = this.viewer,
-	        canvas = this.canvas;
-	    var document = this.element.ownerDocument;
+	    var canvas = this.canvas,
+	        element = this.element,
+	        viewer = this.viewer;
 	    addListener(viewer, EVENT_CLICK, this.onClick = this.click.bind(this));
 	    addListener(viewer, EVENT_WHEEL, this.onWheel = this.wheel.bind(this));
 	    addListener(viewer, EVENT_DRAG_START, this.onDragStart = this.dragstart.bind(this));
-	    addListener(canvas, EVENT_POINTER_DOWN, this.onPointerDown = this.pointerdown.bind(this));
-	    addListener(document, EVENT_POINTER_MOVE, this.onPointerMove = this.pointermove.bind(this));
-	    addListener(document, EVENT_POINTER_UP, this.onPointerUp = this.pointerup.bind(this));
-	    addListener(document, EVENT_KEY_DOWN, this.onKeyDown = this.keydown.bind(this));
-	    addListener(window, EVENT_RESIZE, this.onResize = this.resize.bind(this));
 	
-	    if (options.toggleOnDblclick) {
+	    if (this.options.toggleOnDblclick) {
 	      addListener(canvas, EVENT_DBLCLICK, this.onDblclick = this.dblclick.bind(this));
 	    }
+	
+	    addListener(canvas, EVENT_POINTER_DOWN, this.onPointerDown = this.pointerdown.bind(this));
+	    addListener(element.ownerDocument, EVENT_POINTER_MOVE, this.onPointerMove = this.pointermove.bind(this));
+	    addListener(element.ownerDocument, EVENT_POINTER_UP, this.onPointerUp = this.pointerup.bind(this));
+	    addListener(element.ownerDocument, EVENT_KEY_DOWN, this.onKeyDown = this.keydown.bind(this));
+	    addListener(window, EVENT_RESIZE, this.onResize = this.resize.bind(this));
 	  },
 	  unbind: function unbind() {
-	    var options = this.options,
-	        viewer = this.viewer,
-	        canvas = this.canvas;
-	    var document = this.element.ownerDocument;
+	    var canvas = this.canvas,
+	        element = this.element,
+	        viewer = this.viewer;
 	    removeListener(viewer, EVENT_CLICK, this.onClick);
 	    removeListener(viewer, EVENT_WHEEL, this.onWheel);
 	    removeListener(viewer, EVENT_DRAG_START, this.onDragStart);
-	    removeListener(canvas, EVENT_POINTER_DOWN, this.onPointerDown);
-	    removeListener(document, EVENT_POINTER_MOVE, this.onPointerMove);
-	    removeListener(document, EVENT_POINTER_UP, this.onPointerUp);
-	    removeListener(document, EVENT_KEY_DOWN, this.onKeyDown);
-	    removeListener(window, EVENT_RESIZE, this.onResize);
 	
-	    if (options.toggleOnDblclick) {
+	    if (this.options.toggleOnDblclick) {
 	      removeListener(canvas, EVENT_DBLCLICK, this.onDblclick);
 	    }
+	
+	    removeListener(canvas, EVENT_POINTER_DOWN, this.onPointerDown);
+	    removeListener(element.ownerDocument, EVENT_POINTER_MOVE, this.onPointerMove);
+	    removeListener(element.ownerDocument, EVENT_POINTER_UP, this.onPointerUp);
+	    removeListener(element.ownerDocument, EVENT_KEY_DOWN, this.onKeyDown);
+	    removeListener(window, EVENT_RESIZE, this.onResize);
 	  }
 	};
 	
 	var handlers = {
-	  click: function click(event) {
-	    var target = event.target;
+	  click: function click(_ref) {
+	    var target = _ref.target;
 	    var options = this.options,
 	        imageData = this.imageData;
-	    var action = getData(target, DATA_ACTION); // Cancel the emulated click when the native click event was triggered.
-	
-	    if (IS_TOUCH_DEVICE && event.isTrusted && target === this.canvas) {
-	      clearTimeout(this.clickCanvasTimeout);
-	    }
+	    var action = getData(target, DATA_ACTION);
 	
 	    switch (action) {
 	      case 'mix':
@@ -9303,14 +9140,7 @@
 	    }
 	  },
 	  dblclick: function dblclick(event) {
-	    event.preventDefault();
-	
-	    if (this.viewed && event.target === this.image) {
-	      // Cancel the emulated double click when the native dblclick event was triggered.
-	      if (IS_TOUCH_DEVICE && event.isTrusted) {
-	        clearTimeout(this.doubleClickImageTimeout);
-	      }
-	
+	    if (event.target.parentElement === this.canvas) {
 	      this.toggle();
 	    }
 	  },
@@ -9356,8 +9186,8 @@
 	      });
 	    });
 	  },
-	  loadImage: function loadImage(event) {
-	    var image = event.target;
+	  loadImage: function loadImage(e) {
+	    var image = e.target;
 	    var parent = image.parentNode;
 	    var parentWidth = parent.offsetWidth || 30;
 	    var parentHeight = parent.offsetHeight || 50;
@@ -9388,14 +9218,14 @@
 	      })));
 	    });
 	  },
-	  keydown: function keydown(event) {
+	  keydown: function keydown(e) {
 	    var options = this.options;
 	
 	    if (!this.fulled || !options.keyboard) {
 	      return;
 	    }
 	
-	    switch (event.keyCode || event.which || event.charCode) {
+	    switch (e.keyCode || e.which || e.charCode) {
 	      // Escape
 	      case 27:
 	        if (this.played) {
@@ -9426,7 +9256,7 @@
 	
 	      case 38:
 	        // Prevent scroll on Firefox
-	        event.preventDefault(); // Zoom in
+	        e.preventDefault(); // Zoom in
 	
 	        this.zoom(options.zoomRatio, true);
 	        break;
@@ -9439,7 +9269,7 @@
 	
 	      case 40:
 	        // Prevent scroll on Firefox
-	        event.preventDefault(); // Zoom out
+	        e.preventDefault(); // Zoom out
 	
 	        this.zoom(-options.zoomRatio, true);
 	        break;
@@ -9450,8 +9280,8 @@
 	      // eslint-disable-next-line no-fallthrough
 	
 	      case 49:
-	        if (event.ctrlKey) {
-	          event.preventDefault();
+	        if (e.ctrlKey) {
+	          e.preventDefault();
 	          this.toggle();
 	        }
 	
@@ -9460,40 +9290,35 @@
 	      default:
 	    }
 	  },
-	  dragstart: function dragstart(event) {
-	    if (event.target.tagName.toLowerCase() === 'img') {
-	      event.preventDefault();
+	  dragstart: function dragstart(e) {
+	    if (e.target.tagName.toLowerCase() === 'img') {
+	      e.preventDefault();
 	    }
 	  },
-	  pointerdown: function pointerdown(event) {
+	  pointerdown: function pointerdown(e) {
 	    var options = this.options,
 	        pointers = this.pointers;
-	    var buttons = event.buttons,
-	        button = event.button;
 	
-	    if (!this.viewed || this.showing || this.viewing || this.hiding // No primary button (usually the left button)
-	    // Note: Touch events does not contain `buttons` and `button` properties
-	    || isNumber(buttons) && buttons > 1 || isNumber(button) && button > 0 // Open context menu
-	    || event.ctrlKey) {
+	    if (!this.viewed || this.showing || this.viewing || this.hiding) {
 	      return;
-	    } // Prevent default behaviours as page zooming in touch devices.
+	    } // This line is required for preventing page zooming in iOS browsers
 	
 	
-	    event.preventDefault();
+	    e.preventDefault();
 	
-	    if (event.changedTouches) {
-	      forEach(event.changedTouches, function (touch) {
+	    if (e.changedTouches) {
+	      forEach(e.changedTouches, function (touch) {
 	        pointers[touch.identifier] = getPointer(touch);
 	      });
 	    } else {
-	      pointers[event.pointerId || 0] = getPointer(event);
+	      pointers[e.pointerId || 0] = getPointer(e);
 	    }
 	
 	    var action = options.movable ? ACTION_MOVE : false;
 	
 	    if (Object.keys(pointers).length > 1) {
 	      action = ACTION_ZOOM;
-	    } else if ((event.pointerType === 'touch' || event.type === 'touchstart') && this.isSwitchable()) {
+	    } else if ((e.pointerType === 'touch' || e.type === 'touchstart') && this.isSwitchable()) {
 	      action = ACTION_SWITCH;
 	    }
 	
@@ -9503,7 +9328,7 @@
 	
 	    this.action = action;
 	  },
-	  pointermove: function pointermove(event) {
+	  pointermove: function pointermove(e) {
 	    var pointers = this.pointers,
 	        action = this.action;
 	
@@ -9511,80 +9336,45 @@
 	      return;
 	    }
 	
-	    event.preventDefault();
+	    e.preventDefault();
 	
-	    if (event.changedTouches) {
-	      forEach(event.changedTouches, function (touch) {
+	    if (e.changedTouches) {
+	      forEach(e.changedTouches, function (touch) {
+	        // // The first parameter should not be undefined in some browsers
 	        assign(pointers[touch.identifier] || {}, getPointer(touch, true));
 	      });
 	    } else {
-	      assign(pointers[event.pointerId || 0] || {}, getPointer(event, true));
+	      assign(pointers[e.pointerId || 0] || {}, getPointer(e, true));
 	    }
 	
-	    this.change(event);
+	    this.change(e);
 	  },
-	  pointerup: function pointerup(event) {
-	    var _this2 = this;
-	
-	    var options = this.options,
-	        action = this.action,
+	  pointerup: function pointerup(e) {
+	    var action = this.action,
 	        pointers = this.pointers;
-	    var pointer;
 	
-	    if (event.changedTouches) {
-	      forEach(event.changedTouches, function (touch) {
-	        pointer = pointers[touch.identifier];
+	    if (e.changedTouches) {
+	      forEach(e.changedTouches, function (touch) {
 	        delete pointers[touch.identifier];
 	      });
 	    } else {
-	      pointer = pointers[event.pointerId || 0];
-	      delete pointers[event.pointerId || 0];
+	      delete pointers[e.pointerId || 0];
 	    }
 	
 	    if (!action) {
 	      return;
 	    }
 	
-	    event.preventDefault();
+	    e.preventDefault();
 	
-	    if (options.transition && (action === ACTION_MOVE || action === ACTION_ZOOM)) {
+	    if (this.options.transition && (action === ACTION_MOVE || action === ACTION_ZOOM)) {
 	      addClass(this.image, CLASS_TRANSITION);
 	    }
 	
-	    this.action = false; // Emulate click and double click in touch devices to support backdrop and image zooming (#210).
-	
-	    if (IS_TOUCH_DEVICE && action !== ACTION_ZOOM && pointer && Date.now() - pointer.timeStamp < 500) {
-	      clearTimeout(this.clickCanvasTimeout);
-	      clearTimeout(this.doubleClickImageTimeout);
-	
-	      if (options.toggleOnDblclick && this.viewed && event.target === this.image) {
-	        if (this.imageClicked) {
-	          this.imageClicked = false; // This timeout will be cleared later when a native dblclick event is triggering
-	
-	          this.doubleClickImageTimeout = setTimeout(function () {
-	            dispatchEvent(_this2.image, EVENT_DBLCLICK);
-	          }, 50);
-	        } else {
-	          this.imageClicked = true; // The default timing of a double click in Windows is 500 ms
-	
-	          this.doubleClickImageTimeout = setTimeout(function () {
-	            _this2.imageClicked = false;
-	          }, 500);
-	        }
-	      } else {
-	        this.imageClicked = false;
-	
-	        if (options.backdrop && options.backdrop !== 'static' && event.target === this.canvas) {
-	          // This timeout will be cleared later when a native click event is triggering
-	          this.clickCanvasTimeout = setTimeout(function () {
-	            dispatchEvent(_this2.canvas, EVENT_CLICK);
-	          }, 50);
-	        }
-	      }
-	    }
+	    this.action = false;
 	  },
 	  resize: function resize() {
-	    var _this3 = this;
+	    var _this2 = this;
 	
 	    if (!this.isShown || this.hiding) {
 	      return;
@@ -9597,7 +9387,7 @@
 	
 	    if (this.viewed) {
 	      this.initImage(function () {
-	        _this3.renderImage();
+	        _this2.renderImage();
 	      });
 	    }
 	
@@ -9608,21 +9398,21 @@
 	      }
 	
 	      forEach(this.player.getElementsByTagName('img'), function (image) {
-	        addListener(image, EVENT_LOAD, _this3.loadImage.bind(_this3), {
+	        addListener(image, EVENT_LOAD, _this2.loadImage.bind(_this2), {
 	          once: true
 	        });
 	        dispatchEvent(image, EVENT_LOAD);
 	      });
 	    }
 	  },
-	  wheel: function wheel(event) {
-	    var _this4 = this;
+	  wheel: function wheel(e) {
+	    var _this3 = this;
 	
 	    if (!this.viewed) {
 	      return;
 	    }
 	
-	    event.preventDefault(); // Limit wheel speed to prevent zoom too fast
+	    e.preventDefault(); // Limit wheel speed to prevent zoom too fast
 	
 	    if (this.wheeling) {
 	      return;
@@ -9630,20 +9420,20 @@
 	
 	    this.wheeling = true;
 	    setTimeout(function () {
-	      _this4.wheeling = false;
+	      _this3.wheeling = false;
 	    }, 50);
 	    var ratio = Number(this.options.zoomRatio) || 0.1;
 	    var delta = 1;
 	
-	    if (event.deltaY) {
-	      delta = event.deltaY > 0 ? 1 : -1;
-	    } else if (event.wheelDelta) {
-	      delta = -event.wheelDelta / 120;
-	    } else if (event.detail) {
-	      delta = event.detail > 0 ? 1 : -1;
+	    if (e.deltaY) {
+	      delta = e.deltaY > 0 ? 1 : -1;
+	    } else if (e.wheelDelta) {
+	      delta = -e.wheelDelta / 120;
+	    } else if (e.detail) {
+	      delta = e.detail > 0 ? 1 : -1;
 	    }
 	
-	    this.zoom(-delta * ratio, true, event);
+	    this.zoom(-delta * ratio, true, e);
 	  }
 	};
 	
@@ -10036,12 +9826,6 @@
 	        options = this.options,
 	        pointers = this.pointers,
 	        imageData = this.imageData;
-	    var width = imageData.width,
-	        height = imageData.height,
-	        left = imageData.left,
-	        top = imageData.top,
-	        naturalWidth = imageData.naturalWidth,
-	        naturalHeight = imageData.naturalHeight;
 	    ratio = Math.max(0, ratio);
 	
 	    if (isNumber(ratio) && this.viewed && !this.played && (_zoomable || options.zoomable)) {
@@ -10055,11 +9839,9 @@
 	        ratio = 1;
 	      }
 	
-	      var newWidth = naturalWidth * ratio;
-	      var newHeight = naturalHeight * ratio;
-	      var offsetWidth = newWidth - width;
-	      var offsetHeight = newHeight - height;
-	      var oldRatio = width / naturalWidth;
+	      var newWidth = imageData.naturalWidth * ratio;
+	      var newHeight = imageData.naturalHeight * ratio;
+	      var oldRatio = imageData.width / imageData.naturalWidth;
 	
 	      if (isFunction(options.zoom)) {
 	        addListener(element, EVENT_ZOOM, options.zoom, {
@@ -10084,12 +9866,12 @@
 	          pageY: _originalEvent.pageY
 	        }; // Zoom from the triggering point of the event
 	
-	        imageData.left -= offsetWidth * ((center.pageX - offset.left - left) / width);
-	        imageData.top -= offsetHeight * ((center.pageY - offset.top - top) / height);
+	        imageData.left -= (newWidth - imageData.width) * ((center.pageX - offset.left - imageData.left) / imageData.width);
+	        imageData.top -= (newHeight - imageData.height) * ((center.pageY - offset.top - imageData.top) / imageData.height);
 	      } else {
 	        // Zoom from the center of the image
-	        imageData.left -= offsetWidth / 2;
-	        imageData.top -= offsetHeight / 2;
+	        imageData.left -= (newWidth - imageData.width) / 2;
+	        imageData.top -= (newHeight - imageData.height) / 2;
 	      }
 	
 	      imageData.width = newWidth;
@@ -10678,7 +10460,7 @@
 	      }
 	    }
 	  },
-	  change: function change(event) {
+	  change: function change(e) {
 	    var options = this.options,
 	        pointers = this.pointers;
 	    var pointer = pointers[Object.keys(pointers)[0]];
@@ -10693,7 +10475,7 @@
 	      // Zoom the current image
 	
 	      case ACTION_ZOOM:
-	        this.zoom(getMaxZoomRatio(pointers), false, event);
+	        this.zoom(getMaxZoomRatio(pointers), false, e);
 	        break;
 	
 	      case ACTION_SWITCH:
@@ -10756,7 +10538,6 @@
 	    this.fading = false;
 	    this.fulled = false;
 	    this.hiding = false;
-	    this.imageClicked = false;
 	    this.imageData = {};
 	    this.index = this.options.initialViewIndex;
 	    this.isImg = false;
@@ -10800,6 +10581,11 @@
 	          images.push(image);
 	        }
 	      });
+	
+	      if (!images.length) {
+	        return;
+	      }
+	
 	      this.isImg = isImg;
 	      this.length = images.length;
 	      this.images = images;
@@ -10900,7 +10686,7 @@
 	      if (options.backdrop) {
 	        addClass(viewer, "".concat(NAMESPACE, "-backdrop"));
 	
-	        if (!options.inline && options.backdrop !== 'static') {
+	        if (!options.inline && options.backdrop === true) {
 	          setData(canvas, DATA_ACTION, 'hide');
 	        }
 	      }
@@ -11060,7 +10846,7 @@
 
 
 /***/ }),
-/* 87 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -11073,7 +10859,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _src = __webpack_require__(84);
+	var _src = __webpack_require__(80);
 	
 	var _src2 = _interopRequireDefault(_src);
 	
@@ -11131,7 +10917,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 88 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -11144,7 +10930,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _src = __webpack_require__(84);
+	var _src = __webpack_require__(80);
 	
 	var _src2 = _interopRequireDefault(_src);
 	
@@ -11200,7 +10986,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 89 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -11213,11 +10999,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _src = __webpack_require__(84);
+	var _src = __webpack_require__(80);
 	
 	var _src2 = _interopRequireDefault(_src);
 	
-	var _beeButton = __webpack_require__(82);
+	var _beeButton = __webpack_require__(78);
 	
 	var _beeButton2 = _interopRequireDefault(_beeButton);
 	
